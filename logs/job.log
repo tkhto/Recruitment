@@ -1,0 +1,1394 @@
+INFO 2019-12-20 00:49:17,759 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-20 01:02:28,198 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-20 01:02:50,423 log 228 Not Found: /
+WARNING 2019-12-20 01:02:50,424 basehttp 154 "GET / HTTP/1.1" 404 1927
+INFO 2019-12-20 01:02:57,169 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2019-12-20 01:02:57,238 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-20 01:02:57,278 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-20 01:02:57,281 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-20 01:02:57,281 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-20 01:02:57,283 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-20 01:02:57,283 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-20 01:02:57,288 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-20 01:02:57,295 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-20 01:02:57,299 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-20 01:02:57,300 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-20 01:02:57,306 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-20 01:02:57,310 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-20 01:02:57,313 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-20 01:02:57,313 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-20 01:02:57,314 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-20 01:02:57,316 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-20 01:02:57,319 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-20 01:02:57,320 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-20 01:02:57,441 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-20 01:03:06,729 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-12-20 01:03:08,205 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13967
+INFO 2019-12-20 01:03:08,240 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2019-12-20 01:03:08,241 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2019-12-20 01:03:08,243 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-20 01:03:08,245 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:03:11,071 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 34774
+INFO 2019-12-20 01:03:11,099 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-20 01:03:11,100 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-20 01:03:11,102 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-20 01:03:11,105 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-20 01:03:11,107 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-20 01:03:11,108 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:03:11,110 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-20 01:03:11,110 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-20 01:03:46,650 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-20 01:03:47,850 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-20 01:03:55,301 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 34775
+INFO 2019-12-20 01:03:55,331 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:04:06,782 basehttp 154 "GET /xadmin/user/account/?_cols=username.email.last_name.is_staff HTTP/1.1" 200 36004
+INFO 2019-12-20 01:04:06,812 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:04:09,535 basehttp 154 "GET /xadmin/user/account/?_cols=username.email.is_staff HTTP/1.1" 200 34809
+INFO 2019-12-20 01:04:09,562 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:04:11,414 basehttp 154 "GET /xadmin/user/account/?_cols=username.is_staff HTTP/1.1" 200 33802
+INFO 2019-12-20 01:04:11,437 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:04:13,243 basehttp 154 "GET /xadmin/user/account/?_cols=username HTTP/1.1" 200 32660
+INFO 2019-12-20 01:04:13,330 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:04:31,658 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile HTTP/1.1" 200 33667
+INFO 2019-12-20 01:04:31,685 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:05:49,396 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile.is_staff HTTP/1.1" 200 34842
+INFO 2019-12-20 01:05:49,420 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:05:53,628 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile.is_staff.is_active HTTP/1.1" 200 36091
+INFO 2019-12-20 01:05:53,657 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:06:01,096 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile.is_staff.is_active.work_status HTTP/1.1" 200 37429
+INFO 2019-12-20 01:06:01,119 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:06:06,736 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile.is_staff.is_active.work_status.is_superuser HTTP/1.1" 200 38918
+INFO 2019-12-20 01:06:06,766 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:06:44,361 basehttp 154 "GET /xadmin/xadmin/log/ HTTP/1.1" 200 29772
+INFO 2019-12-20 01:06:44,396 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2019-12-20 01:06:44,397 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-20 01:06:44,397 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-20 01:06:44,399 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-20 01:06:44,409 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:06:44,410 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2019-12-20 01:06:44,412 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2019-12-20 01:06:44,415 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2019-12-20 01:06:44,416 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-20 01:06:44,417 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-20 01:06:44,418 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-20 01:06:47,485 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 28610
+INFO 2019-12-20 01:06:47,507 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:06:48,739 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 34775
+INFO 2019-12-20 01:06:48,766 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 01:30:04,473 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-20 01:30:47,283 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-20 01:30:48,327 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-20 01:31:19,284 basehttp 154 "POST /login/ HTTP/1.1" 200 209
+ERROR 2019-12-20 01:47:22,548 exception 77 Invalid HTTP_HOST header: 'api.lianxing.com:8001'. You may need to add 'api.lianxing.com' to ALLOWED_HOSTS.
+WARNING 2019-12-20 01:47:22,644 log 228 Bad Request: /login/
+WARNING 2019-12-20 01:47:22,644 basehttp 154 "POST /login/ HTTP/1.1" 400 62146
+INFO 2019-12-20 01:48:09,014 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-20 01:48:10,329 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-20 01:48:11,106 basehttp 154 "POST /login/ HTTP/1.1" 200 209
+INFO 2019-12-20 01:51:37,630 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-20 01:52:49,145 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-20 01:52:49,858 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-20 01:53:20,407 basehttp 154 "POST /login/ HTTP/1.1" 200 209
+ERROR 2019-12-20 08:36:41,947 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:36:42,044 log 228 Bad Request: /xadmin/user/account/1/update/
+WARNING 2019-12-20 08:36:42,045 basehttp 154 "GET /xadmin/user/account/1/update/ HTTP/1.1" 400 64342
+ERROR 2019-12-20 08:37:01,325 exception 77 Invalid HTTP_HOST header: 'www.lianxing.com:8001'. You may need to add 'www.lianxing.com' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:01,366 log 228 Bad Request: /xadmin/user/account/1/update/
+WARNING 2019-12-20 08:37:01,366 basehttp 154 "GET /xadmin/user/account/1/update/ HTTP/1.1" 400 63122
+ERROR 2019-12-20 08:37:01,909 exception 77 Invalid HTTP_HOST header: 'www.lianxing.com:8001'. You may need to add 'www.lianxing.com' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:01,940 log 228 Bad Request: /favicon.ico
+WARNING 2019-12-20 08:37:01,941 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 62878
+ERROR 2019-12-20 08:37:13,311 exception 77 Invalid HTTP_HOST header: 'www.lianxing.com:8001'. You may need to add 'www.lianxing.com' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:13,342 log 228 Bad Request: /xadmin/user/account/1/update/
+WARNING 2019-12-20 08:37:13,343 basehttp 154 "GET /xadmin/user/account/1/update/ HTTP/1.1" 400 63257
+ERROR 2019-12-20 08:37:13,413 exception 77 Invalid HTTP_HOST header: 'www.lianxing.com:8001'. You may need to add 'www.lianxing.com' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:13,440 log 228 Bad Request: /favicon.ico
+WARNING 2019-12-20 08:37:13,440 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 62878
+ERROR 2019-12-20 08:37:49,852 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:49,885 log 228 Bad Request: /xadmin/user/account/
+WARNING 2019-12-20 08:37:49,886 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 400 64120
+ERROR 2019-12-20 08:37:50,525 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:50,557 log 228 Bad Request: /xadmin/reversion/revision/
+WARNING 2019-12-20 08:37:50,557 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 400 64178
+ERROR 2019-12-20 08:37:51,055 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:51,086 log 228 Bad Request: /xadmin/xadmin/log/
+WARNING 2019-12-20 08:37:51,086 basehttp 154 "GET /xadmin/xadmin/log/ HTTP/1.1" 400 64158
+ERROR 2019-12-20 08:37:51,486 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:51,516 log 228 Bad Request: /xadmin/user/account/
+WARNING 2019-12-20 08:37:51,516 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile.is_staff.is_active.work_status.is_superuser HTTP/1.1" 400 64971
+ERROR 2019-12-20 08:37:52,018 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:52,051 log 228 Bad Request: /xadmin/user/account/
+WARNING 2019-12-20 08:37:52,051 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile.is_staff.is_active.work_status HTTP/1.1" 400 64855
+ERROR 2019-12-20 08:37:53,970 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:54,000 log 228 Bad Request: /xadmin/user/account/
+WARNING 2019-12-20 08:37:54,001 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile.is_staff.is_active HTTP/1.1" 400 64749
+ERROR 2019-12-20 08:37:54,907 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:54,941 log 228 Bad Request: /xadmin/user/account/
+WARNING 2019-12-20 08:37:54,942 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile.is_staff HTTP/1.1" 400 64660
+ERROR 2019-12-20 08:37:55,750 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8001'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2019-12-20 08:37:55,782 log 228 Bad Request: /xadmin/user/account/
+WARNING 2019-12-20 08:37:55,782 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile HTTP/1.1" 400 64581
+INFO 2019-12-20 08:38:32,604 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-20 08:38:33,912 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-20 08:38:35,064 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile HTTP/1.1" 200 4389
+INFO 2019-12-20 08:38:35,108 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-20 08:38:35,109 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,109 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,110 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,113 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,114 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,115 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,120 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,121 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,123 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,123 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,124 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,126 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,129 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,130 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,130 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,131 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:35,246 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:40,783 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile HTTP/1.1" 200 4389
+INFO 2019-12-20 08:38:40,831 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-20 08:38:41,165 basehttp 154 "GET /xadmin/user/account/?_cols=username HTTP/1.1" 200 4382
+INFO 2019-12-20 08:38:41,833 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile HTTP/1.1" 200 4389
+INFO 2019-12-20 08:38:50,541 basehttp 154 "POST /xadmin/user/account/?_cols=username.mobile HTTP/1.1" 302 0
+INFO 2019-12-20 08:38:50,676 basehttp 154 "GET /xadmin/user/account/?_cols=username.mobile HTTP/1.1" 200 32083
+INFO 2019-12-20 08:38:50,708 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:50,709 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:50,709 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:50,718 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:50,719 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:50,720 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:50,720 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:50,722 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 08:38:52,271 basehttp 154 "GET /xadmin/user/account/1/update/ HTTP/1.1" 200 31258
+INFO 2019-12-20 08:38:52,300 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3729
+INFO 2019-12-20 08:38:52,304 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,307 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2019-12-20 08:38:52,313 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,315 basehttp 154 "GET /static/xadmin/css/xadmin.widget.select-transfer.css HTTP/1.1" 200 2317
+INFO 2019-12-20 08:38:52,317 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,321 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,322 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2019-12-20 08:38:52,325 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,334 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,336 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 08:38:52,337 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+INFO 2019-12-20 08:38:52,339 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,339 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select-transfer.js HTTP/1.1" 200 8214
+INFO 2019-12-20 08:38:52,342 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2019-12-20 08:38:52,346 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,347 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,348 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:38:52,349 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21112
+INFO 2019-12-20 08:38:52,351 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 304 0
+INFO 2019-12-20 08:39:58,972 basehttp 154 "POST /xadmin/user/account/1/update/ HTTP/1.1" 302 0
+INFO 2019-12-20 08:39:59,037 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 33420
+INFO 2019-12-20 08:39:59,071 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 08:40:06,917 basehttp 154 "GET /xadmin/user/account/?_cols=username.email.first_name.last_name.is_staff.is_active HTTP/1.1" 200 37030
+INFO 2019-12-20 08:40:06,943 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 08:40:12,430 basehttp 154 "GET /xadmin/user/account/?_cols=username.email.first_name.last_name.is_staff.is_active.work_status HTTP/1.1" 200 38456
+INFO 2019-12-20 08:40:12,456 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-20 08:40:15,957 basehttp 154 "GET /xadmin/user/account/?_cols=username.email.first_name.last_name.is_staff.is_active.work_status.is_superuser HTTP/1.1" 200 40037
+INFO 2019-12-20 08:40:15,982 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-21 17:08:34,795 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-21 17:08:35,518 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-21 17:58:03,680 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-21 17:58:04,244 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-21 18:00:13,010 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-21 18:00:14,013 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-21 21:55:57,287 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-21 21:55:58,508 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:06:01,303 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-22 22:06:02,623 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:08:37,647 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-22 22:08:38,907 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:15:40,690 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-22 22:15:41,886 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:15:54,423 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-22 22:15:55,194 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:17:09,292 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-22 22:17:10,044 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:17:47,223 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-22 22:17:47,983 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:18:12,621 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:18:26,485 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-22 22:25:15,378 log 228 Not Found: /users/geetest/
+WARNING 2019-12-22 22:25:15,381 basehttp 154 "GET /users/geetest/ HTTP/1.1" 404 2300
+INFO 2019-12-22 22:25:42,547 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:28:04,113 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/urls.py changed, reloading.
+INFO 2019-12-22 22:28:05,505 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:33:04,532 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-22 22:33:05,753 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:44:24,986 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:45:24,400 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:45:29,770 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:45:38,964 basehttp 154 "GET /geetest/ HTTP/1.1" 200 7074
+INFO 2019-12-22 22:45:39,009 basehttp 154 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2019-12-22 22:45:39,009 basehttp 154 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2019-12-22 22:45:39,009 basehttp 154 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2019-12-22 22:45:39,009 basehttp 154 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2019-12-22 22:45:39,010 basehttp 154 "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2019-12-22 22:45:39,011 basehttp 154 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2019-12-22 22:45:39,018 basehttp 154 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2019-12-22 22:45:39,018 basehttp 154 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2019-12-22 22:45:39,019 basehttp 154 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2019-12-22 22:45:39,020 basehttp 154 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2019-12-22 22:45:39,036 basehttp 154 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2019-12-22 22:45:39,290 log 228 Not Found: /favicon.ico
+WARNING 2019-12-22 22:45:39,290 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2291
+INFO 2019-12-22 22:48:01,513 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:49:27,408 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 22:50:45,270 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:50:49,516 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:51:13,004 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:52:32,560 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:53:43,562 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:54:22,500 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 22:59:39,983 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:03:15,748 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:06:17,287 basehttp 154 "OPTIONS /users/geetest/ HTTP/1.1" 200 0
+WARNING 2019-12-22 23:06:17,299 log 228 Not Found: /users/geetest/
+WARNING 2019-12-22 23:06:17,299 basehttp 154 "POST /users/geetest/ HTTP/1.1" 404 2301
+INFO 2019-12-22 23:06:17,480 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:06:26,540 basehttp 154 "OPTIONS /users/geetest/ HTTP/1.1" 200 0
+WARNING 2019-12-22 23:06:26,546 log 228 Not Found: /users/geetest/
+WARNING 2019-12-22 23:06:26,546 basehttp 154 "POST /users/geetest/ HTTP/1.1" 404 2301
+INFO 2019-12-22 23:06:26,710 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:07:26,840 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:07:31,628 basehttp 154 "OPTIONS /users/geetest/ HTTP/1.1" 200 0
+WARNING 2019-12-22 23:07:31,634 log 228 Not Found: /users/geetest/
+WARNING 2019-12-22 23:07:31,634 basehttp 154 "POST /users/geetest/ HTTP/1.1" 404 2301
+INFO 2019-12-22 23:12:59,898 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:13:01,181 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:14:43,944 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:14:45,003 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:16:39,190 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:16:44,467 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-22 23:16:44,475 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-22 23:16:44,481 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-22 23:16:44,499 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x10ba93208>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:16:44,500 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:16:44,501 basehttp 154 "POST /login/ HTTP/1.1" 507 35
+INFO 2019-12-22 23:16:54,008 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:17:02,583 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-22 23:17:02,588 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-22 23:17:02,596 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-22 23:17:02,606 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x10b9f9940>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:17:02,607 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:17:02,607 basehttp 154 "POST /login/ HTTP/1.1" 507 35
+INFO 2019-12-22 23:17:25,395 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:17:31,748 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:17:36,655 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-22 23:17:36,659 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-22 23:17:36,663 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-22 23:17:36,672 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x10b9f9cc0>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:17:36,673 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:17:36,673 basehttp 154 "POST /login/ HTTP/1.1" 507 35
+INFO 2019-12-22 23:19:05,150 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:19:06,527 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-22 23:20:28,033 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x106804b00>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:20:28,054 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:20:28,055 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 507 35
+ERROR 2019-12-22 23:20:30,862 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x1068be898>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:20:30,863 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:20:30,864 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 507 35
+ERROR 2019-12-22 23:20:32,022 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x1068b5048>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:20:32,023 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:20:32,024 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 507 35
+INFO 2019-12-22 23:24:43,994 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:24:45,197 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-22 23:24:48,480 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x10ee2a128>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:24:48,492 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:24:48,492 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 507 35
+ERROR 2019-12-22 23:26:25,466 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x10ee7af60>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:26:25,467 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:26:25,467 basehttp 154 "POST /login/?username=maguodong&password=Eric54920 HTTP/1.1" 507 35
+INFO 2019-12-22 23:33:17,391 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:33:18,520 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:33:20,260 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:33:21,065 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:33:21,861 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:33:31,707 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-22 23:33:31,710 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-22 23:33:31,714 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-22 23:33:31,726 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x1116f56a0>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:33:31,727 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:33:31,727 basehttp 154 "POST /login/ HTTP/1.1" 507 35
+INFO 2019-12-22 23:34:44,385 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:34:45,577 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:34:48,237 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-22 23:34:52,970 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-22 23:34:52,975 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-22 23:34:52,979 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-22 23:34:52,989 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x10e87e5f8>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:34:52,990 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:34:52,990 basehttp 154 "POST /login/ HTTP/1.1" 507 35
+ERROR 2019-12-22 23:35:03,004 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x10e73de10>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:35:03,005 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:35:03,005 basehttp 154 "POST /login/?username=maguodong&password=Eric54920 HTTP/1.1" 507 35
+INFO 2019-12-22 23:35:44,932 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:35:46,005 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-22 23:35:48,606 exceptions 25 [<rest_framework_jwt.views.ObtainJSONWebToken object at 0x10506eb00>] (1054, "Unknown column 'user_account.user_type' in 'field list'")
+ERROR 2019-12-22 23:35:48,616 log 228 Insufficient Storage: /login/
+ERROR 2019-12-22 23:35:48,616 basehttp 154 "POST /login/?username=maguodong&password=Eric54920 HTTP/1.1" 507 35
+INFO 2019-12-22 23:36:46,008 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:36:49,585 basehttp 154 "POST /login/?username=maguodong&password=Eric54920 HTTP/1.1" 200 209
+INFO 2019-12-22 23:37:08,498 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 200 209
+INFO 2019-12-22 23:37:28,372 basehttp 154 "POST /login/?username=15110962403&password=Eric54920 HTTP/1.1" 200 209
+INFO 2019-12-22 23:41:42,533 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-22 23:41:43,753 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:41:54,336 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-22 23:41:55,205 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:42:00,332 basehttp 154 "POST /login/?username=15110962403&password=Eric54920 HTTP/1.1" 200 209
+INFO 2019-12-22 23:42:13,589 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-22 23:42:14,369 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:42:38,011 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-22 23:42:38,794 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:42:58,124 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-22 23:42:58,894 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:45:08,524 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-22 23:45:09,335 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-22 23:45:15,143 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py", line 56, in post
+    print(equest.data)
+NameError: name 'equest' is not defined
+ERROR 2019-12-22 23:45:15,145 basehttp 154 "POST /login/?username=15110962403&password=Eric54920 HTTP/1.1" 500 16727
+INFO 2019-12-22 23:45:21,072 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-22 23:45:21,952 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:45:22,957 basehttp 154 "POST /login/?username=15110962403&password=Eric54920 HTTP/1.1" 200 209
+INFO 2019-12-22 23:51:43,551 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 200 209
+INFO 2019-12-22 23:53:04,428 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-22 23:53:05,604 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:57:09,470 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:57:10,641 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:58:13,943 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-22 23:58:15,053 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:58:15,791 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 200 232
+INFO 2019-12-22 23:58:25,860 basehttp 154 "POST /login/?username=15110962432&password=Eric54920 HTTP/1.1" 200 232
+INFO 2019-12-22 23:58:37,955 basehttp 154 "POST /login/?username=15110962432&password=Eric54920 HTTP/1.1" 200 232
+INFO 2019-12-22 23:59:12,826 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-22 23:59:14,019 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-22 23:59:16,006 basehttp 154 "POST /login/?username=15110962432&password=Eric54920 HTTP/1.1" 200 232
+INFO 2019-12-23 00:00:03,391 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 00:00:04,147 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 00:00:06,676 basehttp 154 "POST /login/?username=15110962432&password=Eric54920 HTTP/1.1" 200 232
+INFO 2019-12-23 00:00:45,468 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 00:00:46,260 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 00:01:10,079 basehttp 154 "POST /login/?username=15110962432&password=Eric54920 HTTP/1.1" 200 232
+INFO 2019-12-23 00:04:49,077 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 00:04:50,296 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 00:58:51,432 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-23 00:58:52,083 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:02:21,020 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-23 01:02:22,330 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:03:22,515 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-23 01:03:23,790 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:03:42,297 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:04:47,782 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2019-12-23 01:04:47,875 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-23 01:04:47,937 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-23 01:04:47,938 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-23 01:04:47,938 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-23 01:04:47,938 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-23 01:04:47,939 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-23 01:04:47,947 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-23 01:04:47,948 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-23 01:04:47,955 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-23 01:04:47,960 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-23 01:04:47,963 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-23 01:04:47,966 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-23 01:04:47,967 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-23 01:04:47,970 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-23 01:04:47,971 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-23 01:04:47,974 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-23 01:04:47,974 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-23 01:04:47,975 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-23 01:04:48,217 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-23 01:04:56,824 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-12-23 01:04:58,241 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13967
+INFO 2019-12-23 01:04:58,264 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-23 01:04:58,265 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2019-12-23 01:04:58,265 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2019-12-23 01:04:58,272 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:05:48,503 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-23 01:05:49,720 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:06:54,147 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/adminx.py changed, reloading.
+INFO 2019-12-23 01:06:55,345 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:07:03,734 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/adminx.py changed, reloading.
+INFO 2019-12-23 01:07:04,966 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:07:18,450 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/adminx.py changed, reloading.
+INFO 2019-12-23 01:07:19,572 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:07:52,414 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/adminx.py changed, reloading.
+INFO 2019-12-23 01:07:53,174 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:08:33,446 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/adminx.py changed, reloading.
+INFO 2019-12-23 01:08:34,186 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:08:42,443 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/adminx.py changed, reloading.
+INFO 2019-12-23 01:08:43,207 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:08:56,353 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:09:01,257 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 14387
+INFO 2019-12-23 01:09:01,293 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:09:03,832 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 23462
+INFO 2019-12-23 01:09:03,865 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-23 01:09:03,866 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-23 01:09:03,867 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-23 01:09:03,867 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-23 01:09:03,868 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-23 01:09:03,869 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:09:03,873 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-23 01:09:06,175 basehttp 154 "GET /xadmin/user/province/add/ HTTP/1.1" 200 17646
+INFO 2019-12-23 01:09:06,202 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-23 01:09:06,205 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-23 01:09:06,209 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-23 01:09:06,217 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2019-12-23 01:09:06,218 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:09:06,218 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-23 01:09:06,219 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-23 01:09:06,221 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-23 01:09:23,421 basehttp 154 "POST /xadmin/user/province/add/ HTTP/1.1" 302 0
+INFO 2019-12-23 01:09:23,478 basehttp 154 "GET /xadmin/user/province/add/ HTTP/1.1" 200 17995
+INFO 2019-12-23 01:09:23,506 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:09:31,545 basehttp 154 "POST /xadmin/user/province/add/ HTTP/1.1" 302 0
+INFO 2019-12-23 01:09:31,613 basehttp 154 "GET /xadmin/user/province/add/ HTTP/1.1" 200 17995
+INFO 2019-12-23 01:09:31,640 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:10:02,218 basehttp 154 "POST /xadmin/user/province/add/ HTTP/1.1" 302 0
+INFO 2019-12-23 01:10:02,284 basehttp 154 "GET /xadmin/user/province/add/ HTTP/1.1" 200 17995
+INFO 2019-12-23 01:10:02,308 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:10:15,642 basehttp 154 "POST /xadmin/user/province/add/ HTTP/1.1" 302 0
+INFO 2019-12-23 01:10:15,704 basehttp 154 "GET /xadmin/user/province/add/ HTTP/1.1" 200 17995
+INFO 2019-12-23 01:10:15,729 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:10:21,276 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 28714
+INFO 2019-12-23 01:10:21,306 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:10:21,307 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-23 01:10:39,503 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35359
+INFO 2019-12-23 01:10:39,527 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:10:43,873 basehttp 154 "GET /xadmin/user/account/add/ HTTP/1.1" 200 17505
+INFO 2019-12-23 01:10:43,898 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:10:46,269 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35359
+INFO 2019-12-23 01:10:48,726 basehttp 154 "GET /xadmin/user/account/1/update/ HTTP/1.1" 200 33902
+INFO 2019-12-23 01:10:48,758 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2019-12-23 01:10:48,764 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3729
+INFO 2019-12-23 01:10:48,767 basehttp 154 "GET /static/xadmin/css/xadmin.widget.select-transfer.css HTTP/1.1" 200 2317
+INFO 2019-12-23 01:10:48,769 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2019-12-23 01:10:48,777 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2019-12-23 01:10:48,782 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+INFO 2019-12-23 01:10:48,783 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2019-12-23 01:10:48,785 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select-transfer.js HTTP/1.1" 200 8214
+INFO 2019-12-23 01:10:48,785 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2019-12-23 01:10:48,790 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:10:48,791 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21112
+INFO 2019-12-23 01:10:48,793 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2019-12-23 01:11:37,980 basehttp 154 "POST /xadmin/user/account/1/update/ HTTP/1.1" 302 0
+INFO 2019-12-23 01:11:38,056 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35588
+INFO 2019-12-23 01:11:38,085 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:12:32,741 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 28714
+INFO 2019-12-23 01:12:32,772 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:13:23,403 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-23 01:13:24,707 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 01:13:30,307 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 28718
+INFO 2019-12-23 01:13:30,334 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:13:48,501 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35359
+INFO 2019-12-23 01:13:48,526 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:13:52,990 basehttp 154 "GET /xadmin/user/account/?_cols=username.email.first_name.last_name.is_staff.gender HTTP/1.1" 200 39006
+INFO 2019-12-23 01:13:53,018 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:13:58,650 basehttp 154 "GET /xadmin/user/account/?_cols=username.email.first_name.last_name.is_staff.gender.user_type HTTP/1.1" 200 40339
+INFO 2019-12-23 01:13:58,676 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:14:01,672 basehttp 154 "GET /xadmin/user/account/?_cols=username.email.first_name.last_name.is_staff.gender.user_type.work_status HTTP/1.1" 200 41815
+INFO 2019-12-23 01:14:01,693 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:14:17,270 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 28718
+INFO 2019-12-23 01:14:17,294 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:15:04,225 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35359
+INFO 2019-12-23 01:15:04,249 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:16:19,853 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 28718
+INFO 2019-12-23 01:16:19,877 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 01:34:42,125 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-23 01:34:43,467 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 08:39:00,299 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 11:43:57,678 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 11:43:58,858 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 11:44:14,022 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 11:44:19,482 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 11:44:19,488 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 11:44:19,494 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-23 11:44:19,660 basehttp 154 "POST /login/ HTTP/1.1" 200 232
+INFO 2019-12-23 11:44:53,402 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-23 11:44:54,400 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 11:45:14,274 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 11:45:19,417 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 11:45:19,422 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 11:45:19,428 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 11:45:19,439 log 228 Bad Request: /login/
+WARNING 2019-12-23 11:45:19,439 basehttp 154 "POST /login/ HTTP/1.1" 400 67
+INFO 2019-12-23 11:48:06,750 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 11:48:07,789 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 11:50:15,990 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 11:50:17,202 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 11:50:22,847 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 11:50:27,010 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 11:50:27,015 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 11:50:27,021 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-23 11:50:27,079 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py", line 56, in post
+    if serializer.is_valid():
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py", line 24, in authenticate
+    print(username)
+NameError: name 'username' is not defined
+ERROR 2019-12-23 11:50:27,081 basehttp 154 "POST /login/ HTTP/1.1" 500 17748
+INFO 2019-12-23 11:51:03,178 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 11:51:04,205 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 11:51:06,085 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 11:51:33,203 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 11:51:43,482 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 11:51:43,487 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 11:51:43,493 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 11:51:43,506 log 228 Bad Request: /login/
+WARNING 2019-12-23 11:51:43,506 basehttp 154 "POST /login/ HTTP/1.1" 400 67
+INFO 2019-12-23 11:53:27,307 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 11:53:32,432 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 11:53:32,436 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 11:53:32,441 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 11:53:32,447 log 228 Bad Request: /login/
+WARNING 2019-12-23 11:53:32,447 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 12:50:21,321 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 12:50:38,736 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 12:50:43,873 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 12:50:43,880 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 12:50:43,885 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 12:50:43,890 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:50:43,891 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+WARNING 2019-12-23 12:51:30,651 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:51:30,651 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 400 67
+INFO 2019-12-23 12:52:55,820 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 12:52:56,846 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 12:52:58,528 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 12:52:59,278 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-23 12:52:59,732 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py", line 56, in post
+    if serializer.is_valid():
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py", line 24, in authenticate
+    print(request.data)
+AttributeError: 'NoneType' object has no attribute 'data'
+ERROR 2019-12-23 12:52:59,735 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 500 17638
+INFO 2019-12-23 12:53:40,551 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 12:53:41,343 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 12:53:44,360 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:53:44,360 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 400 67
+INFO 2019-12-23 12:53:54,124 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 12:53:54,869 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 12:53:55,460 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:53:55,461 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 400 67
+INFO 2019-12-23 12:54:06,373 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 12:54:07,110 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 12:54:12,413 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:54:12,413 basehttp 154 "POST /login/?username=15110962402&password=Eric54920 HTTP/1.1" 400 67
+WARNING 2019-12-23 12:55:14,646 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:55:14,647 basehttp 154 "POST /login/?mobile=15110962402&password=Eric54920 HTTP/1.1" 400 67
+INFO 2019-12-23 12:56:52,283 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 12:56:53,086 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 12:56:55,817 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:56:55,818 basehttp 154 "POST /login/?mobile=15110962402&password=Eric54920 HTTP/1.1" 400 67
+INFO 2019-12-23 12:58:04,440 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 12:58:12,480 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:58:12,480 basehttp 154 "POST /login/?mobile=15110962402&password=Eric54920 HTTP/1.1" 400 67
+INFO 2019-12-23 12:58:43,421 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 12:58:44,227 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-23 12:58:45,249 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py", line 56, in post
+    if serializer.is_valid():
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py", line 25, in authenticate
+    user = get_user_by_account(mobile)
+NameError: name 'mobile' is not defined
+ERROR 2019-12-23 12:58:45,254 basehttp 154 "POST /login/?mobile=15110962402&password=Eric54920 HTTP/1.1" 500 17611
+ERROR 2019-12-23 12:58:55,240 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py", line 56, in post
+    if serializer.is_valid():
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py", line 25, in authenticate
+    user = get_user_by_account(mobile)
+NameError: name 'mobile' is not defined
+ERROR 2019-12-23 12:58:55,241 basehttp 154 "POST /login/?account=15110962402&password=Eric54920 HTTP/1.1" 500 17614
+INFO 2019-12-23 12:59:41,876 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 12:59:42,657 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 12:59:46,747 log 228 Bad Request: /login/
+WARNING 2019-12-23 12:59:46,748 basehttp 154 "POST /login/?account=15110962402&password=Eric54920 HTTP/1.1" 400 67
+INFO 2019-12-23 13:04:02,678 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:09:47,149 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 13:09:48,673 log 228 Not Found: /
+WARNING 2019-12-23 13:09:48,674 basehttp 154 "GET / HTTP/1.1" 404 2235
+WARNING 2019-12-23 13:09:48,807 log 228 Not Found: /favicon.ico
+WARNING 2019-12-23 13:09:48,807 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2286
+INFO 2019-12-23 13:10:15,477 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 13:10:15,902 log 228 Not Found: /
+WARNING 2019-12-23 13:10:15,904 basehttp 154 "GET / HTTP/1.1" 404 2235
+WARNING 2019-12-23 13:10:16,063 log 228 Not Found: /favicon.ico
+WARNING 2019-12-23 13:10:16,063 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2286
+INFO 2019-12-23 13:10:29,094 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 13:12:07,616 log 228 Not Found: /
+WARNING 2019-12-23 13:12:07,621 basehttp 154 "GET / HTTP/1.1" 404 2235
+INFO 2019-12-23 13:12:26,112 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 13:12:26,548 log 228 Not Found: /
+WARNING 2019-12-23 13:12:26,549 basehttp 154 "GET / HTTP/1.1" 404 2235
+INFO 2019-12-23 13:12:33,336 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:12:38,244 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:12:38,249 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:12:38,255 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:12:38,264 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:12:38,265 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:14:02,251 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:14:07,574 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:14:07,579 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:14:07,585 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:14:07,593 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:14:07,594 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:14:38,843 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 13:15:43,521 log 228 Not Found: /
+WARNING 2019-12-23 13:15:43,525 basehttp 154 "GET / HTTP/1.1" 404 2235
+INFO 2019-12-23 13:15:48,216 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:15:58,222 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:15:58,252 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:15:58,268 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:15:58,293 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:15:58,297 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:16:16,659 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:16:36,706 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 13:16:58,152 log 228 Not Found: /
+WARNING 2019-12-23 13:16:58,156 basehttp 154 "GET / HTTP/1.1" 404 2235
+INFO 2019-12-23 13:17:12,156 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:17:17,039 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:17:17,062 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:17:17,076 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:17:17,106 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:17:17,110 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:17:46,425 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:18:10,202 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:18:15,803 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:18:15,808 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:18:15,812 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:18:15,817 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:18:15,817 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:18:43,134 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:18:47,972 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:18:47,978 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:18:47,983 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:18:47,990 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:18:47,991 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:19:20,928 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:19:26,115 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:19:26,122 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:19:26,127 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:19:26,131 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:19:26,132 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:19:51,522 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:19:56,130 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:19:56,136 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:19:56,142 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:19:56,147 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:19:56,148 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:22:47,408 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 13:22:48,178 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:22:51,839 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:22:57,150 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:22:57,156 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:22:57,162 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:22:57,166 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:22:57,167 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:23:58,760 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:24:03,412 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:24:03,418 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:24:03,423 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:24:03,430 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:24:03,430 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:25:28,870 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:25:32,987 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:25:32,992 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:25:33,001 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:25:33,007 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:25:33,007 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:27:26,121 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-23 13:27:26,964 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:27:30,024 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:27:34,721 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:27:34,726 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:27:34,735 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:27:34,742 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:27:34,743 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:29:09,844 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-23 13:29:10,663 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:29:12,710 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:29:17,800 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:29:17,804 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:29:17,810 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:29:17,816 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:29:17,817 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:29:55,494 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-23 13:29:56,241 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:29:58,123 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:30:02,777 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:30:02,783 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:30:02,789 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:30:02,794 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:30:02,795 basehttp 154 "POST /login/ HTTP/1.1" 400 41
+INFO 2019-12-23 13:32:54,863 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:32:59,678 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:32:59,683 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:32:59,689 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 13:32:59,702 log 228 Bad Request: /login/
+WARNING 2019-12-23 13:32:59,703 basehttp 154 "POST /login/ HTTP/1.1" 400 67
+INFO 2019-12-23 13:33:46,397 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 13:33:47,189 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:33:54,291 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 13:33:55,036 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:33:57,720 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 13:34:02,242 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:34:02,248 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 13:34:02,254 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-23 13:34:02,413 basehttp 154 "POST /login/ HTTP/1.1" 200 232
+INFO 2019-12-23 13:38:56,801 autoreload 217 /Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework_jwt/views.py changed, reloading.
+INFO 2019-12-23 13:38:57,608 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:46:41,406 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 13:46:42,567 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:48:58,883 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-23 13:48:59,960 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 13:50:36,577 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2019-12-23 13:50:36,704 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-23 13:50:36,754 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-23 13:50:36,758 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-23 13:50:36,759 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-23 13:50:36,759 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-23 13:50:36,760 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-23 13:50:36,761 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-23 13:50:36,779 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-23 13:50:36,780 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-23 13:50:36,786 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-23 13:50:36,787 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-23 13:50:36,794 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-23 13:50:36,794 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-23 13:50:36,796 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-23 13:50:36,797 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-23 13:50:36,798 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-23 13:50:36,801 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-23 13:50:36,804 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-23 13:50:36,985 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+WARNING 2019-12-23 13:50:37,036 log 228 Not Found: /favicon.ico
+WARNING 2019-12-23 13:50:37,036 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2291
+INFO 2019-12-23 13:50:47,390 basehttp 154 "POST /xadmin/ HTTP/1.1" 200 4591
+INFO 2019-12-23 13:50:47,423 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-23 13:50:58,543 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-12-23 13:51:00,053 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 14387
+INFO 2019-12-23 13:51:00,077 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-23 13:51:00,078 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2019-12-23 13:51:00,080 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2019-12-23 13:51:00,087 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 13:51:02,391 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35359
+INFO 2019-12-23 13:51:02,418 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-23 13:51:02,419 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-23 13:51:02,421 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-23 13:51:02,421 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-23 13:51:02,424 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-23 13:51:02,424 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 13:51:02,426 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-23 13:51:02,426 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-23 13:51:10,938 basehttp 154 "GET /xadmin/user/account/1/update/ HTTP/1.1" 200 33902
+INFO 2019-12-23 13:51:10,966 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2019-12-23 13:51:10,975 basehttp 154 "GET /static/xadmin/css/xadmin.widget.select-transfer.css HTTP/1.1" 200 2317
+INFO 2019-12-23 13:51:10,976 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3729
+INFO 2019-12-23 13:51:10,979 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-23 13:51:10,981 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2019-12-23 13:51:10,982 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-23 13:51:10,985 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-23 13:51:10,995 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2019-12-23 13:51:10,996 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select-transfer.js HTTP/1.1" 200 8214
+INFO 2019-12-23 13:51:10,997 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 13:51:10,997 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+INFO 2019-12-23 13:51:10,998 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2019-12-23 13:51:11,005 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-23 13:51:11,008 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2019-12-23 13:51:11,010 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2019-12-23 13:51:11,011 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21112
+INFO 2019-12-23 13:51:11,012 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2019-12-23 13:51:11,013 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-23 13:51:11,013 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-23 13:52:12,344 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35359
+INFO 2019-12-23 13:52:12,372 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 13:52:25,520 basehttp 154 "GET /xadmin/user/account/1/update/ HTTP/1.1" 200 33902
+INFO 2019-12-23 13:52:25,556 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 14:02:17,347 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:14:53,851 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:14:54,936 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:16:27,283 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:16:28,034 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:17:28,558 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:17:29,291 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:17:34,138 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 45355
+INFO 2019-12-23 14:17:34,184 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-23 14:19:10,901 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:19:11,712 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:19:30,811 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:19:31,561 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:20:18,140 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:20:18,874 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:20:45,621 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:20:46,379 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:20:50,139 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:20:50,908 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:21:13,373 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-23 14:21:14,115 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-23 14:21:26,056 log 228 Method Not Allowed: /province/
+WARNING 2019-12-23 14:21:26,057 basehttp 154 "POST /province/ HTTP/1.1" 405 46
+ERROR 2019-12-23 14:21:30,709 log 228 Internal Server Error: /province/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/fields.py", line 92, in get_attribute
+    instance = instance[attr]
+KeyError: 'order'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 14, in get
+    return Response(ser.data)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `order` on serializer `ProvinceSerializers`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'order'."
+ERROR 2019-12-23 14:21:30,712 basehttp 154 "GET /province/ HTTP/1.1" 500 18561
+ERROR 2019-12-23 14:21:46,925 log 228 Internal Server Error: /province/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/fields.py", line 92, in get_attribute
+    instance = instance[attr]
+KeyError: 'order'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 14, in get
+    return Response(ser.data)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+KeyError: "Got KeyError when attempting to get a value for field `order` on serializer `ProvinceSerializers`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'order'."
+ERROR 2019-12-23 14:21:46,927 basehttp 154 "GET /province/ HTTP/1.1" 500 18561
+INFO 2019-12-23 14:22:49,399 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-23 14:22:50,166 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:24:37,975 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:24:39,117 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:24:41,508 basehttp 154 "GET /province/ HTTP/1.1" 200 1908
+INFO 2019-12-23 14:24:57,404 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:24:58,572 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:25:29,906 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-23 14:25:30,832 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:25:35,159 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 14:29:06,281 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 14:29:17,933 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 14:30:23,959 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 14:34:37,843 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:34:38,962 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:34:42,818 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:34:43,602 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-23 14:34:46,276 log 228 Internal Server Error: /province/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 12, in get
+    queryset = models.Province.objects.all().order('id').values('id', 'name')
+AttributeError: 'QuerySet' object has no attribute 'order'
+ERROR 2019-12-23 14:34:46,279 basehttp 154 "GET /province/ HTTP/1.1" 500 16903
+INFO 2019-12-23 14:35:06,335 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:35:07,099 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-23 14:35:15,434 log 228 Internal Server Error: /province/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 12, in get
+    queryset = models.Province.objects.all().order('order').values('id', 'name')
+AttributeError: 'QuerySet' object has no attribute 'order'
+ERROR 2019-12-23 14:35:15,436 basehttp 154 "GET /province/ HTTP/1.1" 500 16906
+INFO 2019-12-23 14:38:16,346 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:38:17,172 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:38:21,157 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 14:41:24,161 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 14:41:38,901 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 14:42:11,080 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 14:47:37,937 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:47:38,829 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:51:03,506 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-23 14:51:04,245 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:51:20,139 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-23 14:51:20,882 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:51:42,158 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-23 14:51:42,896 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:58:09,191 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-23 14:58:10,003 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:58:56,679 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:58:57,584 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:59:50,917 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 14:59:51,733 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 14:59:59,873 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 15:00:00,677 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 15:06:40,793 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 15:06:41,887 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 15:06:56,685 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 15:06:57,876 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 15:08:58,433 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 16:24:31,944 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 16:31:27,954 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 18:24:41,743 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-23 18:24:42,989 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 18:26:46,161 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-23 18:26:46,928 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 18:31:35,536 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-23 18:31:36,675 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 18:31:49,247 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-23 18:31:50,086 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 18:33:22,044 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-23 18:33:23,146 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 22:04:07,008 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-23 22:04:14,954 basehttp 154 "GET /province/ HTTP/1.1" 200 1007
+INFO 2019-12-23 22:05:05,646 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-23 22:05:17,015 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-23 22:05:17,019 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-23 22:05:17,024 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-23 22:05:17,180 log 228 Bad Request: /login/
+WARNING 2019-12-23 22:05:17,181 basehttp 154 "POST /login/ HTTP/1.1" 400 67
+INFO 2019-12-23 22:05:24,011 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:25:58,098 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 00:27:37,836 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:27:42,928 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 00:27:43,085 basehttp 154 "POST /login/ HTTP/1.1" 200 232
+INFO 2019-12-24 00:29:53,099 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-24 00:29:54,194 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 00:32:10,854 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:32:15,516 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 00:32:15,522 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 00:32:15,530 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 00:32:15,687 basehttp 154 "POST /login/ HTTP/1.1" 200 236
+INFO 2019-12-24 00:34:25,098 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-24 00:34:26,317 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 00:34:33,440 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-24 00:34:34,204 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 00:34:40,123 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-24 00:34:40,985 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 00:34:51,551 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:34:51,552 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:34:51,557 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:34:59,249 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:35:04,410 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 00:35:04,418 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 00:35:04,424 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-24 00:35:04,592 exception 77 The joined path (/static/aa.jpg) is located outside of the base path component (/Users/maguodong/Documents/projects/Recruitment/Recruitment/uploads)
+WARNING 2019-12-24 00:35:04,678 log 228 Bad Request: /login/
+WARNING 2019-12-24 00:35:04,679 basehttp 154 "POST /login/ HTTP/1.1" 400 132999
+INFO 2019-12-24 00:36:13,977 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:36:18,685 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 00:36:18,692 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 00:36:18,702 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-24 00:36:18,923 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/files/base.py", line 78, in __iter__
+    for chunk in self.chunks():
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/files/base.py", line 55, in chunks
+    self.seek(0)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/files/utils.py", line 20, in <lambda>
+    seek = property(lambda self: self.file.seek)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/db/models/fields/files.py", line 43, in _get_file
+    self._file = self.storage.open(self.name, 'rb')
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/files/storage.py", line 36, in open
+    return self._open(name, mode)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/files/storage.py", line 224, in _open
+    return File(open(self.path(name), mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/maguodong/Documents/projects/Recruitment/Recruitment/uploads/http:/www.aa.com/static/aa.jpg'
+ERROR 2019-12-24 00:36:18,926 basehttp 154 "POST /login/ HTTP/1.1" 500 125055
+INFO 2019-12-24 00:38:23,369 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2019-12-24 00:38:23,440 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2019-12-24 00:38:23,493 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 00:38:23,499 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 00:38:23,499 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 00:38:23,500 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 00:38:23,501 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 00:38:23,511 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 00:38:23,514 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 00:38:23,519 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 00:38:23,525 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 00:38:23,529 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 00:38:23,530 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 00:38:23,531 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 00:38:23,532 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 00:38:23,537 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 00:38:23,537 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 00:38:23,543 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-24 00:38:23,544 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 00:38:23,819 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 00:38:33,636 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2019-12-24 00:38:34,732 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 14389
+INFO 2019-12-24 00:38:34,759 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2019-12-24 00:38:34,760 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-24 00:38:34,763 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2019-12-24 00:38:34,767 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 00:38:38,698 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35363
+INFO 2019-12-24 00:38:38,723 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 00:38:38,730 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 00:38:38,730 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 00:38:38,733 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-24 00:38:38,735 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 00:38:38,738 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 00:38:38,742 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 00:38:38,742 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 00:38:41,710 basehttp 154 "GET /xadmin/user/account/1/update/ HTTP/1.1" 200 34121
+INFO 2019-12-24 00:38:41,729 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2019-12-24 00:38:41,736 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 200 3729
+INFO 2019-12-24 00:38:41,737 basehttp 154 "GET /static/xadmin/css/xadmin.widget.select-transfer.css HTTP/1.1" 200 2317
+INFO 2019-12-24 00:38:41,738 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-24 00:38:41,738 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-24 00:38:41,738 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2019-12-24 00:38:41,740 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+WARNING 2019-12-24 00:38:41,751 log 228 Not Found: /media/http:/www.aa.com/static/aa.jpg
+INFO 2019-12-24 00:38:41,753 basehttp 154 "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+WARNING 2019-12-24 00:38:41,754 basehttp 154 "GET /media/http%3A/www.aa.com/static/aa.jpg HTTP/1.1" 404 2669
+INFO 2019-12-24 00:38:41,759 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 00:38:41,762 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 200 7546
+INFO 2019-12-24 00:38:41,767 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2019-12-24 00:38:41,768 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select-transfer.js HTTP/1.1" 200 8214
+INFO 2019-12-24 00:38:41,778 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2019-12-24 00:38:41,779 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 200 21112
+INFO 2019-12-24 00:38:41,780 basehttp 154 "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2019-12-24 00:38:41,781 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2019-12-24 00:38:41,784 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-24 00:38:41,785 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-24 00:38:41,786 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-24 00:41:06,525 basehttp 154 "POST /xadmin/user/account/1/update/ HTTP/1.1" 302 0
+INFO 2019-12-24 00:41:06,600 basehttp 154 "GET /xadmin/user/account/ HTTP/1.1" 200 35594
+INFO 2019-12-24 00:41:06,644 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 00:41:06,650 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 00:41:06,652 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 00:41:06,658 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 00:41:06,662 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 00:41:06,665 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 00:41:06,674 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 00:41:06,677 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 00:41:06,678 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 00:41:06,692 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 00:41:06,693 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 00:41:06,696 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 00:41:06,696 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 00:41:06,696 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 00:41:06,697 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 00:41:06,707 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 00:41:06,707 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 00:41:06,708 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 00:41:06,715 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 00:41:06,716 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-24 00:41:06,716 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 00:41:06,718 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 00:41:06,719 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 00:41:06,720 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 00:41:06,727 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 00:41:17,312 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:41:25,057 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 00:41:25,063 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 00:41:25,069 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-24 00:41:25,310 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 50, in default
+    return obj.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+ERROR 2019-12-24 00:41:25,312 basehttp 154 "POST /login/ HTTP/1.1" 500 104703
+INFO 2019-12-24 00:42:59,998 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:43:04,562 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 00:43:04,567 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 00:43:04,572 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+ERROR 2019-12-24 00:43:04,822 log 228 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 50, in default
+    return obj.decode()
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+ERROR 2019-12-24 00:43:04,824 basehttp 154 "POST /login/ HTTP/1.1" 500 104676
+INFO 2019-12-24 00:44:24,102 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-24 00:44:25,422 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 00:44:29,341 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/utils.py changed, reloading.
+INFO 2019-12-24 00:44:30,091 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 00:44:31,927 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 00:44:36,875 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 00:44:36,882 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 00:44:36,890 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 00:44:37,064 basehttp 154 "POST /login/ HTTP/1.1" 200 256
