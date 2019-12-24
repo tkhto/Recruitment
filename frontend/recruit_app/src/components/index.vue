@@ -16,13 +16,13 @@
             </div>
             <ul class="top-right">
                 <li class="top-item"><a href="javascript:;"><i class="el-icon-upload"></i> 上传简历</a></li>
-                <li class="top-item"><a href="javascript:;" @click="centerDialogVisible = true"><i class="el-icon-s-custom"></i> 登录</a></li>
-                <li class="top-item"><a href="javascript:;" @click="centerDialogVisible = true">注册</a></li>
+                <li class="top-item"><a href="javascript:;" @click="loginPanel = true"><i class="el-icon-s-custom"></i> 登录</a></li>
+                <li class="top-item"><a href="javascript:;" @click="loginPanel = true">注册</a></li>
             </ul>
         </div>
     </div>
     <!-- 登录注册 弹出框 -->
-    <el-dialog :visible.sync="centerDialogVisible" width="30%" center>
+    <el-dialog :visible.sync="loginPanel" width="30%" center>
       <h1 class="dialog-logo">Offend</h1>
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="登录" name="first">
@@ -45,12 +45,12 @@
                 <el-input type="text" v-model="registForm.mobile" autocomplete="off" placeholder="手机号" suffix-icon="el-icon-mobile-phone"></el-input>
               </el-form-item>
               <el-form-item prop="rpassword">
-                <el-input type="text" v-model="registForm.rpassword" autocomplete="off" placeholder="密码" suffix-icon="el-icon-mobile-phone"></el-input>
+                <el-input type="password" v-model="registForm.rpassword" autocomplete="off" placeholder="密码" suffix-icon="el-icon-mobile-phone"></el-input>
               </el-form-item>
               <el-form-item prop="sms">
                 <el-input type="text" v-model="registForm.sms" autocomplete="off" placeholder="验证码" suffix-icon="el-icon-key">
                   <template slot="append">
-                    <el-button type="primary" size="middle">获取验证码</el-button>
+                    <el-button type="primary" size="middle" @click="get_code">获取验证码</el-button>
                   </template>
                 </el-input>
               </el-form-item>
@@ -77,15 +77,12 @@
 <script>
 export default {
   data() {
-    // 验证登录手机号
+    // 验证手机号
     let validateAccount = (rule, value, callback) => {
       if (value === '') {
         callback(new Error('请输入手机号'));
       } else if (!this.check_mobile(value)) {
-        // if (this.loginForm.account !== '') {
-          // this.$refs.loginForm.validateField('account');
           callback(new Error("手机号格式错误"));
-        // }
       }
       callback();
     };
@@ -93,24 +90,8 @@ export default {
     let validatePass = (rule, value, callback) => {
       if (value === '') {
         callback(new Error('请输入密码'));
-      }
-      callback();
-    };
-    // 验证注册手机号
-    let validateMobile = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入手机号'));
-      } else {
-        if (this.registForm.mobile !== '') {
-          this.$refs.registForm.validateField('mobile');
-        }
-        callback();
-      }
-    };
-    // 验证注册密码
-    let validateRpassword = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入密码'));
+      } else if (value.length < 6 || value.length > 16) {
+        callback(new Error('密码长度为6～16位'));
       }
       callback();
     };
@@ -126,7 +107,7 @@ export default {
       curr_province: '北京市',
       activeName: 'first',
       changeAddrDialog: false,
-      centerDialogVisible: false,
+      loginPanel: false,
       searchCon: "",
       loginForm: {
         account: '',
@@ -145,10 +126,10 @@ export default {
           { validator: validatePass, trigger: 'blur' }
         ],
         mobile: [
-          { validator: validateMobile, trigger: 'blur' }
+          { validator: validateAccount, trigger: 'blur' }
         ],
         rpassword: [
-          { validator: validateRpassword, trigger: 'blur' }
+          { validator: validatePass, trigger: 'blur' }
         ],
         sms: [
           { validator: validateSms, trigger: 'blur' }
@@ -160,6 +141,13 @@ export default {
     this.getProvince()
   },
   methods: {
+    check_mobile (mobile) {
+      const reg = /^1[3-9]\d{9}$/
+      if (!reg.test(mobile)) {
+          return false;
+      }
+      return true
+    },
     async getProvince () {
       const response = await this.axios.get(`${this.settings.Host}/province/`)
       this.provinceList = response.data
@@ -171,54 +159,45 @@ export default {
     handleClick(tab, event) {
       console.log(tab, event);
     },
+    // 登录处理
     submitLoginForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           this.get_geetest_capcha()
         } else {
-          console.log('error submit!!');
+          this.$message.error("对不起，信息不正确");
           return false;
         }
       });
     },
-    submitRegistForm(){
-        // 注册处理
-        // 验证数据
-        if( !this.check_mobile() ){
-            return false;
+    // 注册处理
+    submitRegistForm(formName) {
+      // 验证数据
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          // 提交数据
+          this.axios.post(`${this.settings.Host}/`,{
+              mobile: this.registForm.mobile,
+              password: this.registForm.rpassword,
+              sms_code: this.registForm.sms,
+          }).then(response=>{
+              // 注册成功!保存登录状态
+              sessionStorage.user_id = response.data.id;
+              sessionStorage.user_name = response.data.username;
+              sessionStorage.user_token = response.data.token;
+              let self = this;
+              this.$message.success("注册成功！");
+              this.loginPanel = false;
+              this.$refs.registForm.resetFields();
+          }).catch(error => {
+            console.log(error)
+              this.$message.error("注册用户失败！");
+          })
+        } else {
+          this.$message.error("对不起，账号密码错误");
+          return false;
         }
-        if(this.password.length<1 || this.sms.length<1){
-            this.$message.error("密码或验证码不能空！");
-            return false;
-        }
-
-        // 提交数据
-        this.$axios.post(`${this.$settings.Host}/users/`,{
-            mobile: this.mobile,
-            sms_code: this.sms,
-            password: this.password,
-        }).then(response=>{
-            // 注册成功!保存登录状态
-            sessionStorage.user_id = response.data.id;
-            sessionStorage.user_name = response.data.username;
-            sessionStorage.user_token = response.data.token;
-            let self = this;
-            this.$alert(`注册用户成功！`,"路飞学城",{
-                callback(){
-                    self.$router.push("/");
-                }
-            })
-        }).catch(error=>{
-            this.$message.error("注册用户失败！");
-        })
-    },
-    clearForm () {
-      this.loginPanel = false,
-      this.username = "",
-      this.password = "",
-      this.mobile = "",
-      this.code = "",
-      this.remember = false
+      });        
     },
     loginHandle() {
       this.axios
@@ -231,17 +210,17 @@ export default {
             localStorage.user_token = response.data.token;
             localStorage.id = response.data.id;
             localStorage.username = response.data.username;
-            // localStorage.avatar = response.data.avatar
             sessionStorage.clear();
           } else {
             sessionStorage.user_token = response.data.token;
             sessionStorage.id = response.data.id;
             sessionStorage.username = response.data.username;
-            // sessionStorage.avatar = response.data.avatar
             localStorage.clear();
           }
           let self = this;
-          this.clearForm()
+          this.loginPanel = false;
+          this.$refs.loginForm.resetFields();
+          document.getElementById("geetest1").innerHTML = "";
           this.$notify({
             title: '登录成功',
             message: '欢迎回来，路飞学成',
@@ -249,29 +228,8 @@ export default {
           });
         })
         .catch(error => {
+          console.log(error)
           this.$message.error("对不起，账号密码错误");
-        });
-    },
-    get_geetest_capcha() {
-      // 获取验证码
-      this.axios.get(`${this.settings.Host}/geetest/`)
-        .then(response => {
-          // 使用initGeetest接口
-          // 参数1：配置参数
-          // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
-          let data = response.data;
-          initGeetest(
-            {
-              gt: data.gt,
-              challenge: data.challenge,
-              product: "popup", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效
-              offline: !data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注
-            },
-            this.handlerPopup
-          );
-        })
-        .catch(error => {
-          this.$message.error("获取验证码错误！");
         });
     },
     handlerPopup(captchaObj) {
@@ -298,13 +256,41 @@ export default {
       document.getElementById("geetest1").innerHTML = ""; // 先把原来容器中的验证码清空了，在添加新的验证码
       captchaObj.appendTo("#geetest1");
     },
-    check_mobile (mobile) {
-      const reg = /1[3-9]\d{9}/
-      if (!reg.test(mobile)) {
-          return false;
-      }
-      return true
-    }
+    get_geetest_capcha() {
+      // 获取验证码
+      this.axios.get(`${this.settings.Host}/geetest/`)
+        .then(response => {
+          // 使用initGeetest接口
+          // 参数1：配置参数
+          // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
+          let data = response.data;
+          initGeetest(
+            {
+              gt: data.gt,
+              challenge: data.challenge,
+              product: "popup", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效
+              offline: !data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注
+            },
+            this.handlerPopup
+          );
+        })
+        .catch(error => {
+          this.$message.error("获取验证码错误！");
+        });
+    },
+    get_code () {
+        // 发送短信
+        if( !this.check_mobile(this.registForm.mobile) ){
+            console.log("code err")
+            return false;
+        }
+        this.axios.get(`${this.settings.Host}/sms/${this.registForm.mobile}/`).then(response=>{
+            this.$message.success(response.data.message);
+        }).catch(error=>{
+          console.log(error)
+            this.$message.error(error.response.data.message);
+        });
+    },
   }
 };
 </script>

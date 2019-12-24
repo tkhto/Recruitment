@@ -11,7 +11,7 @@ class Account(AbstractUser):
     brithday = models.DateField(blank=True, null=True, verbose_name='生日')
     intro = models.CharField(max_length=100, blank=True, null=True, verbose_name='介绍')
     site = models.URLField(blank=True, null=True, verbose_name='个人主页')
-    user_type = models.BooleanField(choices=((0, '普通用户'), (1, '企业用户')), verbose_name='用户类型')
+    user_type = models.BooleanField(choices=((0, '普通用户'), (1, '企业用户')), default=0, verbose_name='用户类型')
     work_status_list = (
         (0, '已离职'),
         (1, '在职中'),
@@ -31,10 +31,3 @@ class Province(models.Model):
     class Meta:
         verbose_name = '省份'
         verbose_name_plural = verbose_name
-
-        """
-        "北京","上海","天津","重庆","河北","山西","河南","辽宁","吉林",
-					"黑龙江","内蒙古","江苏","山东","安徽","浙江","福建","湖北","湖南","广西","广东",
-					"江西","四川","海南","贵州","云南","西藏","陕西","甘肃","青海","宁夏","新疆",
-					"港澳","台湾","钓鱼岛","海外"
-        """

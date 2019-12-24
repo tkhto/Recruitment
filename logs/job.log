@@ -1392,3 +1392,945 @@ INFO 2019-12-24 00:44:36,875 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
 INFO 2019-12-24 00:44:36,882 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
 INFO 2019-12-24 00:44:36,890 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
 INFO 2019-12-24 00:44:37,064 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:02:09,007 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:09:48,192 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:15:34,367 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:15:37,848 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:15:52,363 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:15:57,201 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:15:57,206 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:15:57,213 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:15:57,378 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:17:04,122 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:17:15,320 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:17:20,091 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:17:20,095 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:17:20,102 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:17:20,260 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:17:32,802 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:17:38,005 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:17:38,011 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:17:38,026 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:17:38,196 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:18:36,400 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:18:53,081 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:18:57,498 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:18:57,504 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:18:57,512 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:18:57,671 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:20:05,249 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:20:16,093 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:20:20,905 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:20:20,911 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:20:20,921 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:20:21,078 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:20:51,565 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:20:55,675 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:20:55,682 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:20:55,694 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2019-12-24 01:20:55,705 log 228 Bad Request: /login/
+WARNING 2019-12-24 01:20:55,705 basehttp 154 "POST /login/ HTTP/1.1" 400 67
+INFO 2019-12-24 01:21:18,266 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:21:23,317 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:21:23,323 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:21:23,330 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:21:23,489 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:21:57,640 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:22:02,559 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:22:02,564 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:22:02,574 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:22:02,756 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:22:11,676 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:22:25,165 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:22:30,087 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:22:30,092 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:22:30,098 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:22:30,259 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:23:39,144 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:24:25,920 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:24:30,427 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:24:30,433 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:24:30,439 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:24:30,596 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:24:53,216 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:25:04,053 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:25:18,778 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:25:18,785 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:25:18,791 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:25:18,945 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:25:36,871 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:25:49,666 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:25:54,735 basehttp 154 "OPTIONS /geetest/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:25:54,740 basehttp 154 "POST /geetest/ HTTP/1.1" 200 17
+INFO 2019-12-24 01:25:54,749 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2019-12-24 01:25:54,911 basehttp 154 "POST /login/ HTTP/1.1" 200 256
+INFO 2019-12-24 01:28:26,621 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:34:00,978 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:36:03,431 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:36:43,528 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:37:05,338 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:37:13,787 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:38:19,581 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:38:40,372 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:39:20,071 basehttp 154 "GET /geetest/ HTTP/1.1" 200 119
+INFO 2019-12-24 01:42:07,045 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:42:45,192 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:43:15,040 basehttp 154 "OPTIONS /users/ HTTP/1.1" 200 0
+WARNING 2019-12-24 01:43:15,050 log 228 Not Found: /users/
+WARNING 2019-12-24 01:43:15,051 basehttp 154 "POST /users/ HTTP/1.1" 404 2580
+INFO 2019-12-24 01:43:21,144 basehttp 154 "OPTIONS /users/ HTTP/1.1" 200 0
+WARNING 2019-12-24 01:43:21,151 log 228 Not Found: /users/
+WARNING 2019-12-24 01:43:21,152 basehttp 154 "POST /users/ HTTP/1.1" 404 2580
+INFO 2019-12-24 01:43:53,396 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:44:18,403 basehttp 154 "OPTIONS /users/ HTTP/1.1" 200 0
+WARNING 2019-12-24 01:44:18,410 log 228 Not Found: /users/
+WARNING 2019-12-24 01:44:18,410 basehttp 154 "POST /users/ HTTP/1.1" 404 2580
+INFO 2019-12-24 01:46:15,655 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:47:11,800 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-24 01:47:13,184 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:47:19,229 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-24 01:47:19,979 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:47:30,320 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 01:47:31,088 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:48:19,916 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 01:48:21,118 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:48:46,995 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 01:48:47,763 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:49:44,488 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 01:49:45,236 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:50:03,335 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 01:50:04,118 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:51:03,060 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 01:51:04,255 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:51:42,497 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:51:50,725 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:51:59,858 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 01:52:00,676 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:52:37,470 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 01:52:38,205 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 01:53:27,360 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:54:25,633 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+WARNING 2019-12-24 01:54:32,995 log 228 Not Found: /users/sms/undefined/
+WARNING 2019-12-24 01:54:32,995 basehttp 154 "GET /users/sms/undefined/ HTTP/1.1" 404 2802
+WARNING 2019-12-24 01:56:06,833 log 228 Not Found: /users/sms/undefined/
+WARNING 2019-12-24 01:56:06,834 basehttp 154 "GET /users/sms/undefined/ HTTP/1.1" 404 2802
+INFO 2019-12-24 01:56:55,607 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+WARNING 2019-12-24 01:57:06,233 log 228 Bad Request: /users/sms/15110962402/
+WARNING 2019-12-24 01:57:06,234 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 400 56
+WARNING 2019-12-24 01:57:10,834 log 228 Bad Request: /users/sms/15110962402/
+WARNING 2019-12-24 01:57:10,835 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 400 56
+ERROR 2019-12-24 01:57:26,233 log 228 Internal Server Error: /users/sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 01:57:26,235 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 500 17341
+ERROR 2019-12-24 01:57:27,610 log 228 Internal Server Error: /users/sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 01:57:27,611 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 500 17341
+ERROR 2019-12-24 01:57:28,320 log 228 Internal Server Error: /users/sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 01:57:28,322 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 500 17341
+ERROR 2019-12-24 01:57:32,123 log 228 Internal Server Error: /users/sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 01:57:32,124 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 500 17341
+ERROR 2019-12-24 01:57:42,288 log 228 Internal Server Error: /users/sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 01:57:42,290 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 500 17341
+INFO 2019-12-24 01:59:20,092 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 01:59:22,950 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+ERROR 2019-12-24 01:59:29,981 log 228 Internal Server Error: /users/sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 01:59:29,982 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 500 17341
+INFO 2019-12-24 02:00:27,123 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-24 02:00:28,384 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 02:00:30,086 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-24 02:00:30,875 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 02:00:49,023 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-24 02:00:49,733 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-24 02:01:16,414 log 228 Not Found: /users/sms/15110962402/
+WARNING 2019-12-24 02:01:16,414 basehttp 154 "GET /users/sms/15110962402/ HTTP/1.1" 404 2810
+INFO 2019-12-24 02:01:47,362 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+WARNING 2019-12-24 02:01:58,573 log 228 Not Found: /sms/15110962402/
+WARNING 2019-12-24 02:01:58,574 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 404 2792
+WARNING 2019-12-24 02:02:04,303 log 228 Not Found: /sms/15110962402/
+WARNING 2019-12-24 02:02:04,303 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 404 2792
+INFO 2019-12-24 02:03:27,938 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 02:04:23,250 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+WARNING 2019-12-24 02:04:33,393 log 228 Not Found: /sms/15110962402/
+WARNING 2019-12-24 02:04:33,394 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 404 2792
+WARNING 2019-12-24 02:04:35,606 log 228 Not Found: /sms/15110962402/
+WARNING 2019-12-24 02:04:35,606 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 404 2792
+WARNING 2019-12-24 02:05:26,267 log 228 Not Found: /sms/15110962402/
+WARNING 2019-12-24 02:05:26,268 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 404 2792
+INFO 2019-12-24 02:06:07,652 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-24 02:06:19,101 log 228 Not Found: /sms/15110962402/
+WARNING 2019-12-24 02:06:19,102 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 404 2792
+INFO 2019-12-24 02:07:31,794 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-24 02:07:32,860 autoreload 597 Watching for file changes with StatReloader
+WARNING 2019-12-24 02:07:34,559 log 228 Not Found: /sms/15110962402/
+WARNING 2019-12-24 02:07:34,560 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 404 2791
+INFO 2019-12-24 02:07:50,042 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/urls.py changed, reloading.
+INFO 2019-12-24 02:07:50,780 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-24 02:07:52,935 log 228 Internal Server Error: /sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 02:07:52,937 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 500 17078
+ERROR 2019-12-24 02:08:05,757 log 228 Internal Server Error: /sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 02:08:05,758 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 500 17317
+INFO 2019-12-24 02:08:12,692 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+ERROR 2019-12-24 02:08:19,881 log 228 Internal Server Error: /sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 02:08:19,883 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 500 17317
+INFO 2019-12-24 02:09:14,143 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-24 02:09:15,472 autoreload 597 Watching for file changes with StatReloader
+ERROR 2019-12-24 02:09:18,192 log 228 Internal Server Error: /sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 02:09:18,194 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 500 17395
+ERROR 2019-12-24 02:09:19,407 log 228 Internal Server Error: /sms/15110962402/
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py", line 65, in get
+    redis_conn = get_redis_connection("sms_code")
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'sms_code' in settings.CACHES
+ERROR 2019-12-24 02:09:19,408 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 500 17395
+INFO 2019-12-24 02:09:23,054 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 02:09:58,044 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/settings/dev.py changed, reloading.
+INFO 2019-12-24 02:09:59,287 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 02:10:06,729 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 02:11:22,654 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 02:12:56,940 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 02:12:58,142 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 02:14:24,592 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 02:15:17,002 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 02:15:17,010 log 228 Bad Request: /
+WARNING 2019-12-24 02:15:17,010 basehttp 154 "POST / HTTP/1.1" 400 119
+INFO 2019-12-24 02:15:43,305 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 02:16:15,867 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 02:16:41,827 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 02:17:04,303 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 02:17:05,668 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 02:17:16,171 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 02:17:16,926 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 02:18:15,780 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 02:18:16,509 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 02:18:21,456 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 02:18:22,268 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 02:18:54,675 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 02:18:55,454 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 08:35:30,202 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 08:35:50,784 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 08:36:43,369 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:36:49,866 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:36:51,475 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 08:36:52,944 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:36:53,545 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:36:53,766 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:36:53,966 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:36:54,177 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:36:54,354 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:40:14,568 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:40:14,577 log 228 Bad Request: /
+WARNING 2019-12-24 08:40:14,578 basehttp 154 "POST / HTTP/1.1" 400 119
+INFO 2019-12-24 08:40:19,858 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 08:40:20,834 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:40:20,840 log 228 Bad Request: /
+WARNING 2019-12-24 08:40:20,840 basehttp 154 "POST / HTTP/1.1" 400 119
+INFO 2019-12-24 08:44:55,087 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:44:55,094 log 228 Bad Request: /
+WARNING 2019-12-24 08:44:55,094 basehttp 154 "POST / HTTP/1.1" 400 119
+INFO 2019-12-24 08:48:26,770 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 08:48:28,004 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 08:48:29,916 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 08:48:31,619 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:48:31,626 log 228 Bad Request: /
+WARNING 2019-12-24 08:48:31,626 basehttp 154 "POST / HTTP/1.1" 400 119
+INFO 2019-12-24 08:49:03,466 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:49:04,386 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:49:04,391 log 228 Bad Request: /
+WARNING 2019-12-24 08:49:04,392 basehttp 154 "POST / HTTP/1.1" 400 119
+INFO 2019-12-24 08:49:10,129 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:49:10,135 log 228 Bad Request: /
+WARNING 2019-12-24 08:49:10,135 basehttp 154 "POST / HTTP/1.1" 400 119
+INFO 2019-12-24 08:49:27,049 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 08:49:39,331 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 08:49:42,707 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:49:42,712 log 228 Bad Request: /
+WARNING 2019-12-24 08:49:42,713 basehttp 154 "POST / HTTP/1.1" 400 119
+INFO 2019-12-24 08:53:11,977 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 08:53:22,630 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 08:53:26,296 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:53:26,311 log 228 Bad Request: /
+WARNING 2019-12-24 08:53:26,312 basehttp 154 "POST / HTTP/1.1" 400 41
+INFO 2019-12-24 08:54:10,513 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 08:54:14,676 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:54:14,689 log 228 Bad Request: /
+WARNING 2019-12-24 08:54:14,690 basehttp 154 "POST / HTTP/1.1" 400 41
+INFO 2019-12-24 08:54:45,670 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 08:55:00,875 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 08:55:07,700 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+ERROR 2019-12-24 08:55:07,780 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/Users/maguodong/Documents/projects/job_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 436, in run_validation
+    value = self.validate(value)
+  File "/Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py", line 48, in validate
+    redis_conn = get_redis_connection("sms_code")
+NameError: name 'get_redis_connection' is not defined
+ERROR 2019-12-24 08:55:07,781 basehttp 154 "POST / HTTP/1.1" 500 18091
+INFO 2019-12-24 08:55:56,831 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 08:55:57,623 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 08:56:00,546 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:56:00,584 log 228 Bad Request: /
+WARNING 2019-12-24 08:56:00,584 basehttp 154 "POST / HTTP/1.1" 400 49
+INFO 2019-12-24 08:56:07,488 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 08:56:08,936 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 08:56:08,950 log 228 Bad Request: /
+WARNING 2019-12-24 08:56:08,951 basehttp 154 "POST / HTTP/1.1" 400 49
+INFO 2019-12-24 09:07:18,603 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 09:07:44,530 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+WARNING 2019-12-24 09:07:44,709 log 228 Bad Request: /
+WARNING 2019-12-24 09:07:44,709 basehttp 154 "POST / HTTP/1.1" 400 25
+INFO 2019-12-24 09:08:10,335 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 09:08:11,480 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 09:09:53,200 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/serializers.py changed, reloading.
+INFO 2019-12-24 09:09:54,303 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 09:09:57,257 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 09:10:24,060 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+INFO 2019-12-24 09:10:24,243 basehttp 154 "POST / HTTP/1.1" 201 213
+INFO 2019-12-24 09:13:58,148 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-24 09:13:58,941 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 09:15:13,288 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 09:22:11,300 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 09:22:37,430 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+INFO 2019-12-24 09:22:37,609 basehttp 154 "POST / HTTP/1.1" 201 213
+INFO 2019-12-24 09:23:46,936 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 09:25:04,986 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 10:46:04,822 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 10:46:06,034 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 10:46:32,006 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 10:46:41,547 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 10:52:01,233 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 10:57:39,683 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 10:58:04,160 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 10:58:12,614 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 10:58:20,063 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 10:59:11,343 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 11:01:39,380 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/views.py changed, reloading.
+INFO 2019-12-24 11:01:40,562 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 11:01:46,753 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 11:01:54,556 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 14:30:09,596 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:30:10,866 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:30:17,650 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 14:30:34,072 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 14:33:37,172 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:33:38,428 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:33:46,961 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 14:34:16,535 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:34:17,600 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:34:24,904 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 14:34:30,735 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 14:35:06,051 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 14:35:16,548 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:35:17,739 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:35:34,716 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:35:35,470 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:35:38,911 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 53
+INFO 2019-12-24 14:36:07,358 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 14:36:12,544 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 14:36:45,432 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:36:46,551 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:46:02,163 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:46:03,323 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:46:08,344 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:46:09,170 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:46:14,035 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 14:46:22,459 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 14:49:41,039 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:49:42,197 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:49:48,034 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 14:54:12,008 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 14:54:13,156 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 14:54:23,024 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 14:54:33,016 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 15:42:14,395 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 15:42:15,570 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 15:42:23,957 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 15:42:32,966 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 15:45:34,056 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/libs/yuntongxun/sms.py changed, reloading.
+INFO 2019-12-24 15:45:35,300 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 15:45:40,282 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 15:45:48,694 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 15:46:11,267 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+INFO 2019-12-24 15:46:11,435 basehttp 154 "POST / HTTP/1.1" 201 213
+INFO 2019-12-24 15:46:55,510 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 15:50:00,394 basehttp 154 "GET /sms/15110962402/ HTTP/1.1" 200 32
+INFO 2019-12-24 15:50:25,375 basehttp 154 "OPTIONS / HTTP/1.1" 200 0
+INFO 2019-12-24 15:50:25,533 basehttp 154 "POST / HTTP/1.1" 201 213
+INFO 2019-12-24 15:50:50,502 basehttp 154 "GET /province/ HTTP/1.1" 200 1004
+INFO 2019-12-24 15:52:59,664 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 16:50:43,942 autoreload 217 /Users/maguodong/Documents/projects/Recruitment/Recruitment/apps/user/models.py changed, reloading.
+INFO 2019-12-24 16:50:45,097 autoreload 597 Watching for file changes with StatReloader
+INFO 2019-12-24 16:53:08,511 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 4368
+INFO 2019-12-24 16:53:08,563 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:53:08,565 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:53:08,568 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:53:08,569 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:53:08,570 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:53:08,581 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:53:08,587 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:53:08,588 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:53:08,597 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:53:08,606 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2019-12-24 16:53:08,609 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:53:08,611 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:53:08,612 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:53:08,616 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:53:08,618 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:53:08,621 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:53:08,622 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:53:08,655 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:53:25,300 basehttp 154 "POST /xadmin/user/province/ HTTP/1.1" 302 0
+INFO 2019-12-24 16:53:26,660 basehttp 154 "GET /xadmin/user/province/ HTTP/1.1" 200 45354
+INFO 2019-12-24 16:53:26,688 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:53:26,697 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:53:26,698 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:53:26,702 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:53:26,705 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:53:26,709 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:53:26,712 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:53:26,718 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:53:26,720 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:53:26,725 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:53:26,727 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:53:26,736 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:53:26,736 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:53:26,742 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:53:26,746 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:53:26,757 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:53:26,758 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 16:53:26,758 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:53:26,761 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 16:53:26,759 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 16:53:26,760 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-24 16:53:26,767 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:53:26,769 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:53:26,770 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 16:53:26,806 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:53:42,060 basehttp 154 "GET /xadmin/user/province/26/update/ HTTP/1.1" 200 17977
+INFO 2019-12-24 16:53:42,083 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:53:42,087 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:53:42,089 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:53:42,105 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:53:42,106 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:53:42,110 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:53:42,112 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:53:42,121 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-24 16:53:42,125 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-24 16:53:42,126 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-24 16:53:42,133 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:53:42,135 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:53:42,145 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:53:42,146 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:53:42,148 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:53:42,148 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:53:42,149 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:53:42,154 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:53:42,155 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:53:42,161 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:53:42,164 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-24 16:53:42,168 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:53:42,170 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:53:42,173 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2019-12-24 16:53:42,174 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-24 16:53:42,175 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-24 16:53:42,176 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-24 16:53:42,194 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:54:00,616 basehttp 154 "POST /xadmin/user/province/26/update/ HTTP/1.1" 302 0
+INFO 2019-12-24 16:54:00,732 basehttp 154 "GET /xadmin/user/province/? HTTP/1.1" 200 45591
+INFO 2019-12-24 16:54:00,770 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:54:00,774 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:54:00,776 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:54:00,778 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:54:00,779 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:54:00,780 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:54:00,788 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:54:00,798 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:54:00,799 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:54:00,800 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:54:00,803 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:54:00,808 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:54:00,813 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:54:00,814 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:54:00,818 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:54:00,820 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:54:00,820 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 16:54:00,821 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:54:00,822 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-24 16:54:00,822 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 16:54:00,828 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 16:54:00,830 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:54:00,830 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:54:00,831 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 16:54:00,849 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:54:08,168 basehttp 154 "GET /xadmin/user/province/31/update/ HTTP/1.1" 200 17977
+INFO 2019-12-24 16:54:08,204 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:54:08,209 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:54:08,210 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:54:08,211 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:54:08,213 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:54:08,225 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-24 16:54:08,226 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:54:08,227 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:54:08,234 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-24 16:54:08,239 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-24 16:54:08,242 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:54:08,243 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:54:08,250 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:54:08,258 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:54:08,259 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:54:08,265 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:54:08,265 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:54:08,266 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:54:08,266 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:54:08,277 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:54:08,279 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:54:08,280 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:54:08,280 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-24 16:54:08,281 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-24 16:54:08,285 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-24 16:54:08,288 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-24 16:54:08,289 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2019-12-24 16:54:08,317 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:54:13,506 basehttp 154 "POST /xadmin/user/province/31/update/ HTTP/1.1" 302 0
+INFO 2019-12-24 16:54:13,624 basehttp 154 "GET /xadmin/user/province/? HTTP/1.1" 200 45588
+INFO 2019-12-24 16:54:13,649 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:54:13,657 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:54:13,660 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:54:13,668 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:54:13,670 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:54:13,675 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:54:13,680 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:54:13,693 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:54:13,694 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:54:13,694 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:54:13,695 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:54:13,695 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:54:13,706 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:54:13,711 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:54:13,711 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 16:54:13,712 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:54:13,713 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 16:54:13,717 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:54:13,717 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:54:13,724 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 16:54:13,725 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-24 16:54:13,725 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:54:13,726 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:54:13,726 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 16:54:13,739 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:54:18,617 basehttp 154 "GET /xadmin/user/province/30/update/ HTTP/1.1" 200 17977
+INFO 2019-12-24 16:54:18,641 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:54:18,648 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:54:18,657 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-24 16:54:18,658 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:54:18,659 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-24 16:54:18,661 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:54:18,662 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:54:18,664 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:54:18,665 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:54:18,679 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-24 16:54:18,686 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:54:18,687 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:54:18,689 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:54:18,694 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:54:18,698 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:54:18,699 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:54:18,704 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:54:18,705 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:54:18,707 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:54:18,708 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-24 16:54:18,710 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-24 16:54:18,714 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:54:18,715 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:54:18,721 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2019-12-24 16:54:18,723 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-24 16:54:18,722 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:54:18,726 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-24 16:54:18,751 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:54:22,886 basehttp 154 "POST /xadmin/user/province/30/update/ HTTP/1.1" 302 0
+INFO 2019-12-24 16:54:23,002 basehttp 154 "GET /xadmin/user/province/? HTTP/1.1" 200 45585
+INFO 2019-12-24 16:54:23,031 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:54:23,032 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:54:23,037 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:54:23,039 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:54:23,042 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:54:23,054 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:54:23,057 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:54:23,058 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:54:23,067 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:54:23,075 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:54:23,082 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:54:23,082 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:54:23,084 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:54:23,087 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:54:23,091 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 16:54:23,095 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:54:23,096 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:54:23,100 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-24 16:54:23,101 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 16:54:23,101 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 16:54:23,103 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:54:23,105 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:54:23,106 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:54:23,106 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 16:54:23,117 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:54:37,296 basehttp 154 "GET /xadmin/user/province/13/update/ HTTP/1.1" 200 17980
+INFO 2019-12-24 16:54:37,320 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:54:37,328 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:54:37,333 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:54:37,334 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:54:37,335 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:54:37,338 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:54:37,345 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2019-12-24 16:54:37,348 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2019-12-24 16:54:37,356 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:54:37,359 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:54:37,363 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2019-12-24 16:54:37,366 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:54:37,368 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:54:37,376 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:54:37,377 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:54:37,377 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:54:37,377 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:54:37,379 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:54:37,385 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:54:37,390 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2019-12-24 16:54:37,392 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:54:37,393 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:54:37,393 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:54:37,394 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2019-12-24 16:54:37,398 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2019-12-24 16:54:37,399 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2019-12-24 16:54:37,399 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2019-12-24 16:54:37,429 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:54:41,694 basehttp 154 "POST /xadmin/user/province/13/update/ HTTP/1.1" 302 0
+INFO 2019-12-24 16:54:41,809 basehttp 154 "GET /xadmin/user/province/? HTTP/1.1" 200 45582
+INFO 2019-12-24 16:54:41,838 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2019-12-24 16:54:41,845 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2019-12-24 16:54:41,848 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2019-12-24 16:54:41,853 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2019-12-24 16:54:41,854 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2019-12-24 16:54:41,856 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2019-12-24 16:54:41,859 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2019-12-24 16:54:41,864 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2019-12-24 16:54:41,867 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2019-12-24 16:54:41,871 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2019-12-24 16:54:41,877 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2019-12-24 16:54:41,879 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2019-12-24 16:54:41,883 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2019-12-24 16:54:41,888 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2019-12-24 16:54:41,895 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2019-12-24 16:54:41,898 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2019-12-24 16:54:41,901 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2019-12-24 16:54:41,901 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2019-12-24 16:54:41,903 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2019-12-24 16:54:41,903 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2019-12-24 16:54:41,908 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2019-12-24 16:54:41,909 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2019-12-24 16:54:41,910 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2019-12-24 16:54:41,911 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2019-12-24 16:54:41,926 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2019-12-24 16:55:03,250 basehttp 154 "GET /province/ HTTP/1.1" 200 992
