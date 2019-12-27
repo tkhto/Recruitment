@@ -23,3 +23,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+// npm install mavon-editor --save

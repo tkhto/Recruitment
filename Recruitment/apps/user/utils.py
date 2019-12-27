@@ -10,7 +10,7 @@ def jwt_response_payload_handler(token, user=None, request=None):
         'username': user.username,
         'mobile': user.mobile,
         'nic_name': user.nic_name,
-        # 'avatar': user.avatar,
+        'avatar': user.avatar.url,
     }
 # 多条件认证
 def get_user_by_account(mobile):

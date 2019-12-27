@@ -82,7 +82,7 @@ export default {
       if (value === '') {
         callback(new Error('请输入手机号'));
       } else if (!this.check_mobile(value)) {
-          callback(new Error("手机号格式错误"));
+        callback(new Error("手机号格式错误"));
       }
       callback();
     };
@@ -141,6 +141,15 @@ export default {
     this.getProvince()
   },
   methods: {
+    // 弹窗提示
+    salert (title, message, type) {
+      this.$notify({
+        title: title,
+        message: message,
+        type: type
+      });
+    },
+    // 校验手机号格式
     check_mobile (mobile) {
       const reg = /^1[3-9]\d{9}$/
       if (!reg.test(mobile)) {
@@ -148,10 +157,12 @@ export default {
       }
       return true
     },
+    // 获取省份
     async getProvince () {
       const response = await this.axios.get(`${this.settings.Host}/province/`)
       this.provinceList = response.data
     },
+    // 改变当前省份
     changeProvince (province) {
       this.curr_province = province;
       this.changeAddrDialog = false;
@@ -165,7 +176,6 @@ export default {
         if (valid) {
           this.get_geetest_capcha()
         } else {
-          this.$message.error("对不起，信息不正确");
           return false;
         }
       });
@@ -186,15 +196,14 @@ export default {
               sessionStorage.user_name = response.data.username;
               sessionStorage.user_token = response.data.token;
               let self = this;
-              this.$message.success("注册成功！");
+              this.salert('注册成功', '在这里寻找你的新起点吧', 'success')
               this.loginPanel = false;
               this.$refs.registForm.resetFields();
           }).catch(error => {
             console.log(error)
-              this.$message.error("注册用户失败！");
+              this.salert('注册失败', '请求发送失败', 'error')
           })
         } else {
-          this.$message.error("对不起，账号密码错误");
           return false;
         }
       });        
@@ -221,15 +230,10 @@ export default {
           this.loginPanel = false;
           this.$refs.loginForm.resetFields();
           document.getElementById("geetest1").innerHTML = "";
-          this.$notify({
-            title: '登录成功',
-            message: '欢迎回来，路飞学成',
-            type: 'success'
-          });
+          this.salert('登录成功', '欢迎回来～', 'success')
         })
         .catch(error => {
-          console.log(error)
-          this.$message.error("对不起，账号密码错误");
+          this.salert('登录失败', '请重新尝试', 'error')
         });
     },
     handlerPopup(captchaObj) {
@@ -249,7 +253,7 @@ export default {
             self.loginHandle();
           })
           .catch(error => {
-            self.$message.error("验证码验证错误！");
+            this.salert('验证失败', '信号丢失了，请重试', 'error')
           });
       });
       // 将验证码加到id为captcha的元素里
@@ -275,20 +279,22 @@ export default {
           );
         })
         .catch(error => {
-          this.$message.error("获取验证码错误！");
+          this.salert('请求失败', '请重试', 'error')
         });
     },
     get_code () {
         // 发送短信
         if( !this.check_mobile(this.registForm.mobile) ){
-            console.log("code err")
             return false;
         }
         this.axios.get(`${this.settings.Host}/sms/${this.registForm.mobile}/`).then(response=>{
-            this.$message.success(response.data.message);
+            if (response.data.status == 0) {
+              this.salert('请求成功', response.data.message, 'success')
+            } else {
+              this.salert('请求失败', response.data.message, 'error')
+            }
         }).catch(error=>{
-          console.log(error)
-            this.$message.error(error.response.data.message);
+            this.salert('获取失败', '请重试', 'error')
         });
     },
   }

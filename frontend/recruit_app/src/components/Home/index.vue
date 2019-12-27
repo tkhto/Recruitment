@@ -20,14 +20,15 @@
         <el-row>
           <el-col :span="5">
             <ul class="menu-wrapper">
-              <li class="menu-item"><span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i></li>
-              <li class="menu-item"><span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i></li>
-              <li class="menu-item"><span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i></li>
-              <li class="menu-item"><span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i></li>
-              <li class="menu-item"><span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i></li>
-              <li class="menu-item"><span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i></li>
-              <li class="menu-item"><span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i></li>
-              <li class="menu-item"><span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i></li>
+              <li class="menu-item" v-for="(item, i) in 8" :key="i">
+                <span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i>
+                <div class="sub-menu">
+                  <dl v-for="(j, i) in 5" :key="i">
+                    <dt><span>后端开发</span></dt>
+                    <dd><a href="javascript:;" v-for="(k, i) in 20" :key="i">Java</a></dd>
+                  </dl>
+                </div>
+              </li>
             </ul>
           </el-col>
           <el-col :span="14">
@@ -112,6 +113,7 @@ export default {
 
 <style lang="less" rel="stylesheet/less">
 .home {
+  height: 1000px;
   overflow: hidden;
   .search-panel {
     background-color: #f9f9f9;
@@ -136,6 +138,7 @@ export default {
         .el-col {
           height: 400px;
           .menu-wrapper {
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -147,7 +150,7 @@ export default {
               line-height: 50px;
               cursor: pointer;
               transition: all .3s;
-              span {
+              & > span {
                 font-size: 16px;
                 font-weight: 500;
                 color: #333;
@@ -163,15 +166,60 @@ export default {
               }
               &:hover {
                 background-color: #ecf5ff;
-                span {
+                & > span {
                   color: rgb(102, 177, 255);
                 }
-                a {
+                & > a {
                   color: rgb(121, 187, 255);
                 }
-                i {
+                & > i {
                   transform: translateX(-5px);
                   color: rgb(121, 187, 255);
+                }
+                .sub-menu {
+                  display: block;
+                }
+              }
+              .sub-menu {
+                position: absolute;
+                // display: none;
+                padding: 5px;
+                box-sizing: border-box;
+                top: 0;
+                left: 250px;
+                width: 700px;
+                height: 400px;
+                background-color: rgb(255, 255, 255);
+                z-index: 999;
+                 & > dl {
+                  dt {
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 14px;
+                    & > span {
+                      line-height: 35px;
+                    }
+                  }
+                  dd {
+                    line-height: 35px;
+                    & > a {
+                      position: relative;
+                      display: inline-block;
+                      padding: 0 15px;
+                      font-size: 14px;
+                      line-height: 35px;
+                      &::after {
+                          content: ' ';
+                          display: inline-block;
+                          position: absolute;
+                          height: 15px;
+                          right: 0px;
+                          width: 1px;
+                          background-color: #989898;
+                          top: 10px;
+                      }
+                    }
+                  }
                 }
               }
             }
