@@ -10,4 +10,5 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
     path('', include("user.urls")),
+    path('home/', include("home.urls")),
 ]

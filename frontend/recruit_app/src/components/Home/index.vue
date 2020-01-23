@@ -20,12 +20,15 @@
         <el-row>
           <el-col :span="5">
             <ul class="menu-wrapper">
-              <li class="menu-item" v-for="(item, i) in 8" :key="i">
-                <span>技术</span><a>后端</a><a>前端</a><i class="el-icon-arrow-right"></i>
+              <li class="menu-item" v-for="item in jobs" :key=item.id>
+                <span>{{ item.name }}</span>
+                <a href="javascript:;">{{ item['sub_category'][0]['name'] }}</a>
+                <a href="javascript:;">{{ item['sub_category'][1]['name'] }}</a>
+                <i class="el-icon-arrow-right"></i>
                 <div class="sub-menu">
-                  <dl v-for="(j, i) in 5" :key="i">
-                    <dt><span>后端开发</span></dt>
-                    <dd><a href="javascript:;" v-for="(k, i) in 20" :key="i">Java</a></dd>
+                  <dl v-for="sub_cate in item['sub_category']" :key=sub_cate.id>
+                    <dt><span>{{ sub_cate.name }}</span></dt>
+                    <dd><a href="javascript:;" v-for="cate in sub_cate['category']" :key=cate.id>{{ cate.name }}</a></dd>
                   </dl>
                 </div>
               </li>
@@ -81,6 +84,8 @@ export default {
       callback();
     };
     return {
+      jobs: [],
+      rec: [],
       searchCon: "",
       ruleForm: {
         account: '',
@@ -96,8 +101,11 @@ export default {
       }
     }
   },
+  created () {
+    this.getJobs()
+  },
   methods: {
-    submitForm(formName) {
+    submitForm (formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           alert('submit!');
@@ -106,6 +114,18 @@ export default {
           return false;
         }
       });
+    },
+    async getJobs () {
+      let response = await this.axios.get(`${this.settings.Host}/home/jobs/`)
+      this.jobs = response.data
+      // for (let i=0; i<8; i++) {
+      //   for (let j=0; j<2; i++) {
+      //     let item = {};
+      //     item.id = response.data[i]['sub_category'][j]['id']
+      //     item.name = response.data[i]['sub_category'][j]['name']
+      //   }
+      //   this.rec.push(item)
+      // }
     }
   }
 }
@@ -182,14 +202,15 @@ export default {
               }
               .sub-menu {
                 position: absolute;
-                // display: none;
+                display: none;
                 padding: 5px;
                 box-sizing: border-box;
+                overflow: auto;
                 top: 0;
                 left: 250px;
                 width: 700px;
                 height: 400px;
-                background-color: rgb(255, 255, 255);
+                background-color: #ecf5ff;
                 z-index: 999;
                  & > dl {
                   dt {
@@ -197,6 +218,7 @@ export default {
                     line-height: 35px;
                     font-size: 14px;
                     & > span {
+                      padding: 0 15px;
                       line-height: 35px;
                     }
                   }
@@ -208,6 +230,9 @@ export default {
                       padding: 0 15px;
                       font-size: 14px;
                       line-height: 35px;
+                      &:hover {
+                        color: #2b84f1;
+                      }
                       &::after {
                           content: ' ';
                           display: inline-block;

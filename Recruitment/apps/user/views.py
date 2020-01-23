@@ -12,16 +12,7 @@ from django_redis import get_redis_connection
 from mycelery.sms.yuntongxun.sms import CCP
 from mycelery.sms.tasks import send_sms_code
 
-import requests
-from lxml import etree
-
-
 # Create your views here.
-class ProvinceAPIView(APIView):
-    def get(self, request):
-        queryset = models.Province.objects.all().order_by('order').values('id', 'name')
-        ser = serializers.ProvinceSerializers(instance=queryset, many=True)
-        return Response(ser.data)
 
 # 极验验证视图
 class GeetestCapchaAPIView(APIView):
@@ -52,7 +43,7 @@ class AccountAPIView(CreateAPIView):
 
 # 发送短信视图
 class SMSAPIView(APIView):
-    def get(self,request,mobile):
+    def get(self, request, mobile):
         """
         短信发送接口
         url:
@@ -75,7 +66,7 @@ class SMSAPIView(APIView):
 
         #3. 生成短信验证码
         sms_code = "%06d" % random.randint(100, 999999)
-        is_send = send_sms_code.delay(mobile,sms_code)
+        is_send = send_sms_code.delay(mobile, sms_code)
 
         #4. 保存短信验证码
         # redis_conn.setex("键","时间","值")
@@ -88,32 +79,8 @@ class SMSAPIView(APIView):
             pipe.setex("sms_%s" % mobile, settings.SMS["sms_expire_time"], sms_code)
             pipe.setex("interval_%s" % mobile, settings.SMS["sms_interval_time"], '_')
             pipe.execute() # 执行redis事务
-            result =  "验证码正发往您的手机, 请留心"
+            result = "验证码正发往您的手机, 请留心"
             return Response({'status': 0, "message":result})
         else:
             result = "验证码发送失败, 请重试"
             return Response({'status': -1, "message":result})
-
-def spider(request):
-    url = "https://lagou.com"
-    response = requests.get(url=url).text
-
-    tree = etree.HTML(response)
-    divList = tree.xpath('//*[@id="sidebar"]/div/div')
-    for key,div in enumerate(divList):
-        title = div.xpath('./div/div/h2/text()')[0].strip()
-        # 存储title
-        models.JobBigCategory.objects.create(id=key+1, orders=key+1, is_show=True, is_delete=False, name=title)
-        print(title)
-        dlList = div.xpath('./div[2]/dl')
-        for key2, dl in enumerate(dlList):
-            dt = dl.xpath('./dt/span/text()')[0].strip()
-            # 存储dt
-            obj = models.JobSubCategory.objects.create(orders=key2+1, is_show=True, is_delete=False, name=dt, parent_id=key+1)
-            print(dt)
-            aList = dl.xpath('./dd/a')
-            for key3,a in enumerate(aList):
-                atext = a.xpath('./h3/text()')[0].strip()
-                parent_id = obj.id
-                models.Category.objects.create(orders=key3+1, is_show=True, is_delete=False, name=atext, parent_id=parent_id)
-                print(atext)

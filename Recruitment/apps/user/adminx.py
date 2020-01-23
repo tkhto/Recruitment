@@ -1,6 +1,5 @@
 import xadmin
 from xadmin import views
-from . import models
 
 class BaseSetting(object):
     """xadmin的基本配置"""
@@ -16,7 +15,3 @@ class GlobalSettings(object):
     menu_style = "accordion"  # 设置菜单折叠
 
 xadmin.site.register(views.CommAdminView, GlobalSettings)
-
-class ProvinceAdmin(object):
-    list_display = ['name', 'order', 'status']
-xadmin.site.register(models.Province, ProvinceAdmin)

@@ -16,8 +16,8 @@
             </div>
             <ul class="top-right">
                 <li class="top-item"><a href="javascript:;"><i class="el-icon-upload"></i> 上传简历</a></li>
-                <li class="top-item"><a href="javascript:;" @click="loginPanel = true"><i class="el-icon-s-custom"></i> 登录</a></li>
-                <li class="top-item"><a href="javascript:;" @click="loginPanel = true">注册</a></li>
+                <li class="top-item"><a href="javascript:;" @click="loginPanel = true;activeName='first'"><i class="el-icon-s-custom"></i> 登录</a></li>
+                <li class="top-item"><a href="javascript:;" @click="loginPanel = true;activeName='second'">注册</a></li>
             </ul>
         </div>
     </div>
@@ -159,7 +159,7 @@ export default {
     },
     // 获取省份
     async getProvince () {
-      const response = await this.axios.get(`${this.settings.Host}/province/`)
+      const response = await this.axios.get(`${this.settings.Host}/home/province/`)
       this.provinceList = response.data
     },
     // 改变当前省份
@@ -168,7 +168,7 @@ export default {
       this.changeAddrDialog = false;
     },
     handleClick(tab, event) {
-      console.log(tab, event);
+      // console.log(tab, event);
     },
     // 登录处理
     submitLoginForm(formName) {
@@ -215,7 +215,7 @@ export default {
           password: this.loginForm.checkPass
         })
         .then(response => {
-          if (this.remember) {
+          if (this.remember) {  // 判断是否记住密码
             localStorage.user_token = response.data.token;
             localStorage.id = response.data.id;
             localStorage.username = response.data.username;
@@ -284,7 +284,7 @@ export default {
     },
     get_code () {
         // 发送短信
-        if( !this.check_mobile(this.registForm.mobile) ){
+        if( !this.check_mobile(this.registForm.mobile) ){   // 检查手机号格式
             return false;
         }
         this.axios.get(`${this.settings.Host}/sms/${this.registForm.mobile}/`).then(response=>{

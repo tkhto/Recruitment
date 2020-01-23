@@ -2,12 +2,7 @@ from . import models
 from rest_framework import serializers
 import re
 from django_redis import get_redis_connection
-
-
-class ProvinceSerializers(serializers.ModelSerializer):
-    class Meta:
-        model = models.Province
-        fields = ['id', 'name']
+from rest_framework_jwt.settings import api_settings
 
 class AccountModelSerializer(serializers.ModelSerializer):
     """用户注册的序列化器"""
@@ -60,8 +55,6 @@ class AccountModelSerializer(serializers.ModelSerializer):
         redis_conn.delete("sms_%s" % mobile)
         return attrs
 
-        return attrs
-
     # 保存数据的方法
     def create(self, validated_data):
         """创建数据"""
@@ -72,7 +65,6 @@ class AccountModelSerializer(serializers.ModelSerializer):
             user = models.Account.objects.create_user(mobile=mobile,password=password,username=mobile, user_type=1)
 
             # 手动生成jwt
-            from rest_framework_jwt.settings import api_settings
             jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
             jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
 
@@ -81,4 +73,3 @@ class AccountModelSerializer(serializers.ModelSerializer):
             return user
         except:
             raise serializers.ValidationError("保存用户失败！")
-        
