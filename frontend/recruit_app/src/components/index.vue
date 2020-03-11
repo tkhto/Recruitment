@@ -1,62 +1,124 @@
 <template>
   <div class="index">
     <div class="topbar">
-        <div class="container">
-            <div class="top-left">
-                <a class="logo" href="javascript:;">Offend</a>
-                <div class="curr-addr">
-                    <span>{{ curr_province }}</span>
-                    <a href="javascript:;" @click="changeAddrDialog = true"><i class="el-icon-location"></i> 切换城市</a>
-                </div>
-                <ul class="top-tabs">
-                    <li class="tab-item"><a href="javascript:;">公司</a></li>
-                    <li class="tab-item"><a href="javascript:;">校园招聘</a></li>
-                    <li class="tab-item"><a href="javascript:;">社区</a></li>
-                </ul>
-            </div>
-            <ul class="top-right">
-                <li class="top-item"><a href="javascript:;"><i class="el-icon-upload"></i> 上传简历</a></li>
-                <li class="top-item"><a href="javascript:;" @click="loginPanel = true;activeName='first'"><i class="el-icon-s-custom"></i> 登录</a></li>
-                <li class="top-item"><a href="javascript:;" @click="loginPanel = true;activeName='second'">注册</a></li>
-            </ul>
+      <div class="container">
+        <div class="top-left">
+          <a class="logo" href="javascript:;">Offend</a>
+          <div class="curr-addr">
+            <span>{{ curr_province }}</span>
+            <a href="javascript:;" @click="changeAddrDialog = true">
+              <i class="el-icon-location"></i> 切换地区
+            </a>
+          </div>
+          <ul class="top-tabs">
+            <li class="tab-item">
+              <a href="javascript:;">校园招聘</a>
+            </li>
+            <li class="tab-item">
+              <a href="javascript:;">社区</a>
+            </li>
+          </ul>
         </div>
+        <ul class="top-right">
+          <li class="top-item">
+            <a :href="`createresume/${this.id}`">
+              <i class="el-icon-upload"></i> 创建简历
+            </a>
+          </li>
+          <li class="top-item" v-if="!this.token"><a href="javascript:;" @click="loginPanel = true;activeName='first'"><i class="el-icon-s-custom"></i> 登录</a></li>
+          <li class="top-item" v-if="!this.token"><a href="javascript:;" @click="loginPanel = true;activeName='second'">注册</a></li>
+          <li class="top-item" v-if="this.token">
+            <el-dropdown>
+              <span class="el-dropdown-link">
+                {{ this.username }}<i class="el-icon-arrow-down el-icon--right"></i>
+              </span>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item><router-link tag="p" to="/profile/"><i class="el-icon-s-custom"></i> 个人信息</router-link></el-dropdown-item>
+                <el-dropdown-item><router-link tag="p" to="/profile"><i class="el-icon-warning"></i> 退出登录</router-link></el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- 登录注册 弹出框 -->
     <el-dialog :visible.sync="loginPanel" width="30%" center>
       <h1 class="dialog-logo">Offend</h1>
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="登录" name="first">
-          <el-form :model="loginForm" status-icon :rules="rules" ref="loginForm" class="demo-ruleForm">
-              <el-form-item prop="account">
-                <el-input type="text" v-model="loginForm.account" autocomplete="off" placeholder="手机号" suffix-icon="el-icon-mobile-phone"></el-input>
-              </el-form-item>
-              <el-form-item prop="checkPass">
-                <el-input type="password" v-model="loginForm.checkPass" autocomplete="off" placeholder="密码" suffix-icon="el-icon-key"></el-input>
-              </el-form-item>
-              <div id="geetest1"></div>
-              <el-form-item>
-                <el-button class="account-btn" @click="submitLoginForm('loginForm')">登录</el-button>
-              </el-form-item>
+          <el-form
+            :model="loginForm"
+            status-icon
+            :rules="rules"
+            ref="loginForm"
+            class="demo-ruleForm"
+          >
+            <el-form-item prop="account">
+              <el-input
+                type="text"
+                v-model="loginForm.account"
+                autocomplete="off"
+                placeholder="手机号"
+                suffix-icon="el-icon-mobile-phone"
+              ></el-input>
+            </el-form-item>
+            <el-form-item prop="checkPass">
+              <el-input
+                type="password"
+                v-model="loginForm.checkPass"
+                autocomplete="off"
+                placeholder="密码"
+                suffix-icon="el-icon-key"
+              ></el-input>
+            </el-form-item>
+            <div id="geetest1"></div>
+            <el-form-item>
+              <el-button class="account-btn" @click="submitLoginForm('loginForm')">登录</el-button>
+            </el-form-item>
           </el-form>
         </el-tab-pane>
         <el-tab-pane label="注册" name="second">
-          <el-form :model="registForm" status-icon :rules="rules" ref="registForm" class="demo-ruleForm">
-              <el-form-item prop="mobile">
-                <el-input type="text" v-model="registForm.mobile" autocomplete="off" placeholder="手机号" suffix-icon="el-icon-mobile-phone"></el-input>
-              </el-form-item>
-              <el-form-item prop="rpassword">
-                <el-input type="password" v-model="registForm.rpassword" autocomplete="off" placeholder="密码" suffix-icon="el-icon-mobile-phone"></el-input>
-              </el-form-item>
-              <el-form-item prop="sms">
-                <el-input type="text" v-model="registForm.sms" autocomplete="off" placeholder="验证码" suffix-icon="el-icon-key">
-                  <template slot="append">
-                    <el-button type="primary" size="middle" @click="get_code">获取验证码</el-button>
-                  </template>
-                </el-input>
-              </el-form-item>
-              <el-form-item>
-                <el-button  class="account-btn" @click="submitRegistForm('registForm')">注册</el-button>
-              </el-form-item>
+          <el-form
+            :model="registForm"
+            status-icon
+            :rules="rules"
+            ref="registForm"
+            class="demo-ruleForm"
+          >
+            <el-form-item prop="mobile">
+              <el-input
+                type="text"
+                v-model="registForm.mobile"
+                autocomplete="off"
+                placeholder="手机号"
+                suffix-icon="el-icon-mobile-phone"
+              ></el-input>
+            </el-form-item>
+            <el-form-item prop="rpassword">
+              <el-input
+                type="password"
+                v-model="registForm.rpassword"
+                autocomplete="off"
+                placeholder="密码"
+                suffix-icon="el-icon-mobile-phone"
+              ></el-input>
+            </el-form-item>
+            <el-form-item prop="sms">
+              <el-input
+                type="text"
+                v-model="registForm.sms"
+                autocomplete="off"
+                placeholder="验证码"
+                suffix-icon="el-icon-key"
+              >
+                <template slot="append">
+                  <el-button type="primary" size="middle" @click="get_code">获取验证码</el-button>
+                </template>
+              </el-input>
+            </el-form-item>
+            <el-form-item>
+              <el-button class="account-btn" @click="submitRegistForm('registForm')">注册</el-button>
+            </el-form-item>
           </el-form>
         </el-tab-pane>
       </el-tabs>
@@ -68,19 +130,27 @@
         <p class="tips-desc">切换城市分站，让我们为您提供更准确的职位信息。</p>
       </div>
       <el-divider></el-divider>
-      <el-button v-for="item in provinceList" :key="item.id" class="button" @click="changeProvince(item.name)">{{ item.name }}</el-button>
+      <el-button
+        v-for="item in provinceList"
+        :key="item.id"
+        class="button"
+        @click="changeProvince(item.name)"
+      >{{ item.name }}</el-button>
     </el-dialog>
     <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer";
+
 export default {
   data() {
     // 验证手机号
     let validateAccount = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入手机号'));
+      if (value === "") {
+        callback(new Error("请输入手机号"));
       } else if (!this.check_mobile(value)) {
         callback(new Error("手机号格式错误"));
       }
@@ -88,61 +158,63 @@ export default {
     };
     // 验证密码
     let validatePass = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入密码'));
+      if (value === "") {
+        callback(new Error("请输入密码"));
       } else if (value.length < 6 || value.length > 16) {
-        callback(new Error('密码长度为6～16位'));
+        callback(new Error("密码长度为6～16位"));
       }
       callback();
     };
     // 验证验证码
     let validateSms = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入验证码'));
+      if (value === "") {
+        callback(new Error("请输入验证码"));
       }
       callback();
     };
     return {
+      token: '',
+      id: '',
+      username: '',
+      nic_name: '',
+      avatar: '',
+      mobile: '',
       provinceList: [],
-      curr_province: '北京市',
-      activeName: 'first',
+      curr_province: "北京市",
+      activeName: "first",
       changeAddrDialog: false,
       loginPanel: false,
       searchCon: "",
       loginForm: {
-        account: '',
-        checkPass: ''
+        account: "",
+        checkPass: ""
       },
       registForm: {
-        mobile: '',
-        rpassword: '',
-        sms: ''
+        mobile: "",
+        rpassword: "",
+        sms: ""
       },
       rules: {
-        account: [
-          { validator: validateAccount, trigger: 'blur' }
-        ],
-        checkPass: [
-          { validator: validatePass, trigger: 'blur' }
-        ],
-        mobile: [
-          { validator: validateAccount, trigger: 'blur' }
-        ],
-        rpassword: [
-          { validator: validatePass, trigger: 'blur' }
-        ],
-        sms: [
-          { validator: validateSms, trigger: 'blur' }
-        ]
+        account: [{ validator: validateAccount, trigger: "blur" }],
+        checkPass: [{ validator: validatePass, trigger: "blur" }],
+        mobile: [{ validator: validateAccount, trigger: "blur" }],
+        rpassword: [{ validator: validatePass, trigger: "blur" }],
+        sms: [{ validator: validateSms, trigger: "blur" }]
       }
-    }
+    };
   },
-  created () {
-    this.getProvince()
+  created() {
+    this.token = sessionStorage.user_token;
+    this.id = sessionStorage.user_id;
+    this.username = sessionStorage.username;
+    this.nic_name = sessionStorage.nic_name;
+    this.mobile = sessionStorage.mobile;
+    this.avatar = sessionStorage.avatar;
+    this.getProvince();
   },
   methods: {
     // 弹窗提示
-    salert (title, message, type) {
+    salert(title, message, type) {
       this.$notify({
         title: title,
         message: message,
@@ -150,20 +222,22 @@ export default {
       });
     },
     // 校验手机号格式
-    check_mobile (mobile) {
-      const reg = /^1[3-9]\d{9}$/
+    check_mobile(mobile) {
+      const reg = /^1[3-9]\d{9}$/;
       if (!reg.test(mobile)) {
-          return false;
+        return false;
       }
-      return true
+      return true;
     },
     // 获取省份
-    async getProvince () {
-      const response = await this.axios.get(`${this.settings.Host}/home/province/`)
-      this.provinceList = response.data
+    async getProvince() {
+      const response = await this.axios.get(
+        `${this.settings.Host}/home/province/`
+      );
+      this.provinceList = response.data;
     },
     // 改变当前省份
-    changeProvince (province) {
+    changeProvince(province) {
       this.curr_province = province;
       this.changeAddrDialog = false;
     },
@@ -172,9 +246,9 @@ export default {
     },
     // 登录处理
     submitLoginForm(formName) {
-      this.$refs[formName].validate((valid) => {
+      this.$refs[formName].validate(valid => {
         if (valid) {
-          this.get_geetest_capcha()
+          this.get_geetest_capcha();
         } else {
           return false;
         }
@@ -183,30 +257,42 @@ export default {
     // 注册处理
     submitRegistForm(formName) {
       // 验证数据
-      this.$refs[formName].validate((valid) => {
+      this.$refs[formName].validate(valid => {
         if (valid) {
           // 提交数据
-          this.axios.post(`${this.settings.Host}/`,{
+          this.axios
+            .post(`${this.settings.Host}/`, {
               mobile: this.registForm.mobile,
               password: this.registForm.rpassword,
-              sms_code: this.registForm.sms,
-          }).then(response=>{
+              sms_code: this.registForm.sms
+            })
+            .then(response => {
               // 注册成功!保存登录状态
               sessionStorage.user_id = response.data.id;
               sessionStorage.user_name = response.data.username;
               sessionStorage.user_token = response.data.token;
+              sessionStorage.mobile = response.data.mobile;
+              sessionStorage.avatar = response.data.avatar;
+              sessionStorage.nic_name = response.data.nic_name;
+              this.token = response.data.token;
+              this.id = response.data.id;
+              this.username = response.data.username;
+              this.nic_name = response.data.nic_name;
+              this.avatar = response.data.avatar;
+              this.mobile = response.data.mobile;
               let self = this;
-              this.salert('注册成功', '在这里寻找你的新起点吧', 'success')
+              this.salert("注册成功", "在这里寻找你的新起点吧", "success");
               this.loginPanel = false;
               this.$refs.registForm.resetFields();
-          }).catch(error => {
-            console.log(error)
-              this.salert('注册失败', '请求发送失败', 'error')
-          })
+            })
+            .catch(error => {
+              console.log(error);
+              this.salert("注册失败", "请求发送失败", "error");
+            });
         } else {
           return false;
         }
-      });        
+      });
     },
     loginHandle() {
       this.axios
@@ -215,25 +301,26 @@ export default {
           password: this.loginForm.checkPass
         })
         .then(response => {
-          if (this.remember) {  // 判断是否记住密码
-            localStorage.user_token = response.data.token;
-            localStorage.id = response.data.id;
-            localStorage.username = response.data.username;
-            sessionStorage.clear();
-          } else {
-            sessionStorage.user_token = response.data.token;
-            sessionStorage.id = response.data.id;
-            sessionStorage.username = response.data.username;
-            localStorage.clear();
-          }
+          sessionStorage.user_token = response.data.token;
+          sessionStorage.user_id = response.data.id;
+          sessionStorage.username = response.data.username;
+          sessionStorage.mobile = response.data.mobile;
+          sessionStorage.avatar = response.data.avatar;
+          sessionStorage.nic_name = response.data.nic_name;
+          this.token = response.data.token;
+          this.id = response.data.id;
+          this.username = response.data.username;
+          this.nic_name = response.data.nic_name;
+          this.avatar = response.data.avatar;
+          this.mobile = response.data.mobile;
           let self = this;
           this.loginPanel = false;
           this.$refs.loginForm.resetFields();
           document.getElementById("geetest1").innerHTML = "";
-          this.salert('登录成功', '欢迎回来～', 'success')
+          this.salert("登录成功", "欢迎回来～", "success");
         })
         .catch(error => {
-          this.salert('登录失败', '请重新尝试', 'error')
+          this.salert("登录失败", "请重新尝试", "error");
         });
     },
     handlerPopup(captchaObj) {
@@ -253,7 +340,7 @@ export default {
             self.loginHandle();
           })
           .catch(error => {
-            this.salert('验证失败', '信号丢失了，请重试', 'error')
+            this.salert("验证失败", "信号丢失了，请重试", "error");
           });
       });
       // 将验证码加到id为captcha的元素里
@@ -262,7 +349,8 @@ export default {
     },
     get_geetest_capcha() {
       // 获取验证码
-      this.axios.get(`${this.settings.Host}/geetest/`)
+      this.axios
+        .get(`${this.settings.Host}/geetest/`)
         .then(response => {
           // 使用initGeetest接口
           // 参数1：配置参数
@@ -279,149 +367,168 @@ export default {
           );
         })
         .catch(error => {
-          this.salert('请求失败', '请重试', 'error')
+          this.salert("请求失败", "请重试", "error");
         });
     },
-    get_code () {
-        // 发送短信
-        if( !this.check_mobile(this.registForm.mobile) ){   // 检查手机号格式
-            return false;
-        }
-        this.axios.get(`${this.settings.Host}/sms/${this.registForm.mobile}/`).then(response=>{
-            if (response.data.status == 0) {
-              this.salert('请求成功', response.data.message, 'success')
-            } else {
-              this.salert('请求失败', response.data.message, 'error')
-            }
-        }).catch(error=>{
-            this.salert('获取失败', '请重试', 'error')
+    get_code() {
+      // 发送短信
+      if (!this.check_mobile(this.registForm.mobile)) {
+        // 检查手机号格式
+        return false;
+      }
+      this.axios
+        .get(`${this.settings.Host}/sms/${this.registForm.mobile}/`)
+        .then(response => {
+          if (response.data.status == 0) {
+            this.salert("请求成功", response.data.message, "success");
+          } else {
+            this.salert("请求失败", response.data.message, "error");
+          }
+        })
+        .catch(error => {
+          this.salert("获取失败", "请重试", "error");
         });
-    },
+    }
+  },
+  components: {
+    Footer
   }
 };
 </script>
 
 <style lang="less" rel="stylesheet/less">
 .index {
-    .topbar {
-        background-color: #303133;
-        .container {
-            .top-left {
-                float: left;
-                .logo {
-                    float: left;
-                    color: #fff;
-                    line-height: 40px;
-                }
-                .curr-addr {
-                    float: left;
-                    margin-left: 20px;
-                    font-size: 14px;
-                    span {
-                        color: #fff;
-                        line-height: 40px;
-                    }
-                    a {
-                        display: inline-block;
-                        height: 22px;
-                        margin: 9px 10px;
-                        padding: 0 6px;
-                        border-radius: 2px;
-                        line-height: 22px;
-                        color: #fff;
-                        background-color: #2b4f6d;
-                    }
-                }
-                .top-tabs {
-                    float: left;
-                    .tab-item {
-                        float: left;
-                        a {
-                            display: inline-block;
-                            padding: 0 20px;
-                            height: 40px;
-                            line-height: 40px;
-                            color: rgb(168, 168, 168);
-                            font-size: 14px;
-                            &:hover {
-                                color: #fff;
-                            }
-                        }
-                        & > .active {
-                            color: #fff;
-                            background-color: #2b4f6d;
-                        }
-                    }
-                }
-            }
-            .top-right {
-                float: right;
-                .top-item {
-                    float: left;
-                    a {
-                        display: inline-block;
-                        padding: 0 10px;
-                        height: 40px;
-                        line-height: 40px;
-                        color: rgb(168, 168, 168);
-                        font-size: 14px;
-                        &:hover {
-                            color: #fff;
-                        }
-                    }
-                }
-            }
+  min-width: 1200/16rem;
+  .topbar {
+    background-color: #fff;
+    box-shadow: 0 0 12/16rem 0/16rem #fff;
+    border-bottom: 3px solid #ddd;
+    .container {
+      .top-left {
+        float: left;
+        .logo {
+          float: left;
+          color: #333;
+          line-height: 40/16rem;
         }
-    }
-    .city-list {
-      .tips {
-        width: 100%;
-        .tips-head {
-          font-size: 22px;
-          margin-bottom: 20px;
+        .curr-addr {
+          float: left;
+          margin-left: 20/16rem;
+          font-size: 14/16rem;
+          span {
+            color: #333;
+            line-height: 40/16rem;
+          }
+          a {
+            display: inline-block;
+            height: 22/16rem;
+            margin: 9/16rem 10/16rem;
+            padding: 0 6/16rem;
+            border-radius: 2/16rem;
+            line-height: 22/16rem;
+            color: #333;
+            background-color: #eee;
+          }
         }
-        .tips-desc {
-          font-size: 14px;
+        .top-tabs {
+          float: left;
+          .tab-item {
+            float: left;
+            a {
+              display: inline-block;
+              padding: 0 20/16rem;
+              height: 40/16rem;
+              line-height: 40/16rem;
+              color: #333;
+              font-size: 14/16rem;
+              &:hover {
+                color: #333;
+              }
+            }
+            & > .active {
+              color: #333;
+              background-color: #2b4f6d;
+            }
+          }
         }
       }
+      .top-right {
+        float: right;
+        .top-item {
+          float: left;
+          transition: all .3s;
+          .el-dropdown-link {
+            line-height: 40px;
+            cursor: pointer;
+            color: #333;
+            .el-icon-arrow-down {
+              font-size: 12px;
+            }
+          }
+          a {
+            display: inline-block;
+            padding: 0 10/16rem;
+            height: 40/16rem;
+            line-height: 40/16rem;
+            color: #333;
+            font-size: 14/16rem;
+            &:hover {
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+  .city-list {
+    .tips {
+      width: 100%;
+      .tips-head {
+        font-size: 22/16rem;
+        margin-bottom: 20/16rem;
+      }
+      .tips-desc {
+        font-size: 14/16rem;
+      }
+    }
+    .el-dialog__body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .button {
+        margin: 0 0 20/16rem;
+        width: 100/16rem;
+      }
+    }
+  }
+  .el-dialog__wrapper {
+    .dialog-logo {
+      font-size: 40/16rem;
+      line-height: 40/16rem;
+      margin: 20/16rem 0;
+      text-align: center;
+    }
+    .el-dialog {
       .el-dialog__body {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .button {
-          margin: 0 0 20px;
-          width: 100px;
-        }
-      }
-    }
-    .el-dialog__wrapper {
-      .dialog-logo {
-        font-size: 40px;
-        line-height: 40px;
-        margin: 20px 0;
-        text-align: center;
-      }
-        .el-dialog {
-            .el-dialog__body {
-                padding: 25px 50px 30px;
-                .el-tabs {
-                  #geetest1 {
-                    .geetest_holder {
-                      width: 100% !important;
-                      margin-bottom: 22px;
-                    }
-                  }
-                  .el-tabs__header {
-                      padding: 0;
-                      position: relative;
-                      margin: 0 0 22px;
-                  }
-                }
-                .account-btn {
-                    width: 100%;
-                }
+        padding: 25/16rem 50/16rem 30/16rem;
+        .el-tabs {
+          #geetest1 {
+            .geetest_holder {
+              width: 100% !important;
+              margin-bottom: 22/16rem;
             }
+          }
+          .el-tabs__header {
+            padding: 0;
+            position: relative;
+            margin: 0 0 22/16rem;
+          }
         }
+        .account-btn {
+          width: 100%;
+        }
+      }
     }
+  }
 }
 </style>

@@ -2,17 +2,9 @@
   <div class="home">
     <div class="search-panel">
       <div class="container">
-        <el-row>
-          <el-col :span="16" :offset="4">
-              <el-input placeholder="搜索职位/公司" v-model="searchCon">
-                <template slot="append"><el-button><i class="el-icon-search"></i> 搜索</el-button></template>
-              </el-input>
-              <div class="hots">
-                <span>热门搜索: </span>
-                <el-link type="primary">主要链接</el-link>
-              </div>
-          </el-col>
-        </el-row>
+        <div class="search-wrapper">
+          <input type="text" placeholder="你想从事什么工作？"><button><i class="el-icon-right"></i></button>
+        </div>
       </div>
     </div>
     <div class="hero">
@@ -34,28 +26,47 @@
               </li>
             </ul>
           </el-col>
-          <el-col :span="14">
-            <el-carousel :interval="5000" arrow="always" height="400px">
+          <el-col :span="19">
+            <el-carousel :interval="5000" arrow="always" height="25rem">
               <el-carousel-item v-for="item in 4" :key="item">
                 <h3>{{ item }}</h3>
               </el-carousel-item>
             </el-carousel> 
           </el-col>
-          <el-col :span="5">
-              <div class="login-panel">
-                <el-avatar :size="60" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
-                <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm">
-                  <el-form-item prop="account">
-                    <el-input type="text" v-model="ruleForm.account" autocomplete="off" placeholder="用户名/手机号" suffix-icon="el-icon-user"></el-input>
-                  </el-form-item>
-                  <el-form-item prop="checkPass">
-                    <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off" placeholder="密码" suffix-icon="el-icon-key"></el-input>
-                  </el-form-item>
-                  <el-form-item>
-                    <el-button @click="submitForm('ruleForm')">提交</el-button>
-                  </el-form-item>
-                </el-form>
+        </el-row>
+      </div>
+    </div>
+    <div class="position">
+      <div class="container">
+        <h1>工作 <router-link tag="span" to="/positions">更多>>></router-link></h1>
+        <el-row :gutter="20">
+          <el-col :span="6" v-for="(item, index) in positions" :key="index">
+            <router-link tag="div" :to="'position/'+item.id" class="grid-content">
+              <p class="title">
+                <span class="pos-name">{{ item.positionName }}</span>
+                <span class="pos-salary">{{ item.salary }}</span>
+              </p>
+              <p class="pos-require">
+                <span class="pos-year">{{ item.workYear }}</span> /
+                <span class="pos-edu">{{ item.education }}</span>
+              </p>
+              <p class="pos-label">
+                <span v-for="(label, id) in item.skillLabels" :key="id">{{ label }}</span>
+              </p>
+            </router-link>
+          </el-col>
+        </el-row>
+        <h1>公司 <router-link tag="span" to="/companys">更多>>></router-link></h1>
+        <el-row :gutter="20">
+          <el-col :span="6" v-for="item in companys" :key="item.id">
+            <router-link tag="div" :to="'company/'+item.companyId" class="grid-content">
+              <div class="com-avatar"><img :src=item.companyLogo alt=""></div>
+              <div class="com-info">
+                <p class="com-name">{{ item.companyShortName }}</p>
+                <p class="com-field"><span>{{ item.industryField }}</span> / <span>{{ item.financeStage }}</span></p>
+                <p class="com-intro">{{ item.companyIntro }}</p>
               </div>
+            </router-link>
           </el-col>
         </el-row>
       </div>
@@ -67,96 +78,83 @@
 export default {
   name: "home",
   data () {
-    var validateAccount = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入账号'));
-      } else {
-        if (this.ruleForm.checkPass !== '') {
-          this.$refs.ruleForm.validateField('checkPass');
-        }
-        callback();
-      }
-    };
-    var validatePass2 = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入密码'));
-      }
-      callback();
-    };
     return {
       jobs: [],
+      positions: [],
+      companys: [],
       rec: [],
       searchCon: "",
-      ruleForm: {
-        account: '',
-        checkPass: ''
-      },
-      rules: {
-        account: [
-          { validator: validateAccount, trigger: 'blur' }
-        ],
-        checkPass: [
-          { validator: validatePass2, trigger: 'blur' }
-        ]
-      }
     }
   },
   created () {
     this.getJobs()
+    this.getPosition()
+    this.getCompany()
   },
   methods: {
-    submitForm (formName) {
-      this.$refs[formName].validate((valid) => {
-        if (valid) {
-          alert('submit!');
-        } else {
-          console.log('error submit!!');
-          return false;
-        }
-      });
-    },
     async getJobs () {
       let response = await this.axios.get(`${this.settings.Host}/home/jobs/`)
       this.jobs = response.data
-      // for (let i=0; i<8; i++) {
-      //   for (let j=0; j<2; i++) {
-      //     let item = {};
-      //     item.id = response.data[i]['sub_category'][j]['id']
-      //     item.name = response.data[i]['sub_category'][j]['name']
-      //   }
-      //   this.rec.push(item)
-      // }
+    },
+    async getPosition () {
+      let response = await this.axios.get(`${this.settings.Host}/home/position/?page=1&size=16`)
+      this.positions = response.data.results
+    },
+    async getCompany () {
+      let response = await this.axios.get(`${this.settings.Host}/home/company/?page=1&size=8`)
+      this.companys = response.data.results
     }
   }
 }
 </script>
 
-<style lang="less" rel="stylesheet/less">
+<style lang="less" rel="stylesheet/less" scoped>
 .home {
-  height: 1000px;
   overflow: hidden;
   .search-panel {
-    background-color: #f9f9f9;
+    background-color: #f6f6f6;
     .container {
-      .el-row {
-        width: 1200px;
-        margin: 45px 0px;
-        .el-col {
-          border-radius: 4px;
-          .hots {
-            margin-top: 10px;
-            font-size: 14px;
+      .search-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        height: 46/16rem;
+        width: 696/16rem;
+        margin: 50/16rem auto;
+        border: 2/16rem solid #1c70f8;
+        border-radius: 5/16rem;
+        transition: all .3s;
+        input {
+          height: 30/16rem;
+          padding: 8/16rem;
+          flex-grow: 1;
+          color: #5a5a5a;
+          font-weight: 500;
+          border-radius: 5/16rem 0 0 5/16rem;
+        }
+        button {
+          height: 46/16rem;
+          width: 50/16rem;
+          font-size: 35/16rem;
+          line-height: 46/16rem;
+          border-radius: 0 5/16rem 5/16rem 0;
+          i {
+            color: #005bea;
           }
+        }
+        &:hover {
+          transform: translate3d(0, -0.125rem, 0);
+          box-shadow: -2px 4px 0px 0px #3a87ff;
         }
       }
     }
   }
   .hero {
-    margin-top: 20px;
+    margin-top: 20/16rem;
     .container {
       .el-row {
         .el-col {
-          height: 400px;
+          height: 400/16rem;
           .menu-wrapper {
             position: relative;
             display: flex;
@@ -165,36 +163,37 @@ export default {
             .menu-item {
               display: flex;
               justify-content: space-between;
-              padding: 0 10px;
-              height: 50px;
-              line-height: 50px;
+              padding: 0 10/16rem;
+              height: 50/16rem;
+              line-height: 50/16rem;
               cursor: pointer;
+              background-image: linear-gradient(to right, #fff 0%, #fff 100%);
               transition: all .3s;
               & > span {
-                font-size: 16px;
+                font-size: 16/16rem;
                 font-weight: 500;
                 color: #333;
               }
               a {
-                font-size: 14px;
+                font-size: 14/16rem;
                 color: #555;
               }
               i {
-                line-height: 50px;
+                line-height: 50/16rem;
                 color: #555;
                 transition: all .3s;
               }
               &:hover {
-                background-color: #ecf5ff;
+                background-image: linear-gradient(to right, #00c6fb 0%, #005bea 100%);
                 & > span {
-                  color: rgb(102, 177, 255);
+                  color: #fff;
                 }
                 & > a {
-                  color: rgb(121, 187, 255);
+                  color: #fff;
                 }
                 & > i {
-                  transform: translateX(-5px);
-                  color: rgb(121, 187, 255);
+                  transform: translateX(-5/16rem);
+                  color: #fff;
                 }
                 .sub-menu {
                   display: block;
@@ -202,46 +201,40 @@ export default {
               }
               .sub-menu {
                 position: absolute;
+                width: 700/16rem;
+                height: 400/16rem;
+                top: 0;
+                left: 250/16rem;
                 display: none;
-                padding: 5px;
+                padding: 5/16rem;
                 box-sizing: border-box;
                 overflow: auto;
-                top: 0;
-                left: 250px;
-                width: 700px;
-                height: 400px;
-                background-color: #ecf5ff;
                 z-index: 999;
+                background-color: #fff;
+                border: 1/16rem solid #005bea;
                  & > dl {
                   dt {
-                    height: 35px;
-                    line-height: 35px;
-                    font-size: 14px;
+                    height: 35/16rem;
+                    line-height: 35/16rem;
+                    font-size: 16/16rem;
+                    font-weight: 600;
+                    color: #333;
                     & > span {
-                      padding: 0 15px;
-                      line-height: 35px;
+                      padding: 0 15/16rem;
+                      line-height: 35/16rem;
                     }
                   }
                   dd {
-                    line-height: 35px;
+                    line-height: 35/16rem;
                     & > a {
                       position: relative;
                       display: inline-block;
-                      padding: 0 15px;
-                      font-size: 14px;
-                      line-height: 35px;
+                      padding: 0 15/16rem;
+                      font-size: 14/16rem;
+                      line-height: 35/16rem;
+                      color: #333;
                       &:hover {
-                        color: #2b84f1;
-                      }
-                      &::after {
-                          content: ' ';
-                          display: inline-block;
-                          position: absolute;
-                          height: 15px;
-                          right: 0px;
-                          width: 1px;
-                          background-color: #989898;
-                          top: 10px;
+                        color: #005bea;
                       }
                     }
                   }
@@ -251,9 +244,9 @@ export default {
           }
           .el-carousel__item h3 {
             color: #475669;
-            font-size: 18px;
+            font-size: 18/16rem;
             opacity: 0.75;
-            line-height: 400px;
+            line-height: 400/16rem;
             margin: 0;
           }
           .el-carousel__item:nth-child(2n) {
@@ -264,18 +257,125 @@ export default {
           }
           .login-panel {
             height: inherit;
-            padding: 20px;
+            padding: 20/16rem;
             .el-avatar {
               display: flex;
               justify-content: space-around;
               margin: 0 auto;
-              margin-bottom: 22px;
+              margin-bottom: 22/16rem;
             }
             .el-form {
               .el-button {
                 width: 100%;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .position {
+    margin-top: 20/16rem;
+    background-color: #f9f9f9;
+    .container {
+      h1 {
+        font-weight: 400;
+        color: #1f2f3d;
+        font-size: 28/16rem;
+        padding-top: 20/16rem;
+        span {
+          font-size: 15/16rem;
+          color: #dd4a38;
+          cursor: pointer;
+        }
+      }
+      .el-row {
+        padding-bottom: 20/16rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .el-col {
+          border-radius: 4/16rem;
+          padding-top: 20/16rem;
+          .grid-content {
+            border-radius: 4/16rem;
+            padding: 20/16rem;
+            color: #757575;
+            background-color: #fff;
+            transition: all .3s;
+            &:hover {
+              box-shadow: 0 0 0.7rem 3/16rem rgba(0, 0, 0, 0.1);
+              transform: translate3d(0, -0.125rem, 0);
+            }
+            .title {
+              display: flex;
+              justify-content: space-around;
+              flex-wrap: nowrap;
+              height: 30/16rem;
+              line-height: 30/16rem;
+              .pos-name {
+                flex-grow: 1;
+                font-weight: 400;
+                color: #333;
+                font-size: 20/16rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+              }
+              .pos-salary {
+                padding-left: 10/16rem;
+                color: #dd4a38;
+                font-size: 20/16rem;
+                font-weight: 800;
+                min-width: fit-content;
+              }
+            }
+            .pos-require {
+              height: 30/16rem;
+              line-height: 30/16rem;
+              font-size: 15/16rem;
+            }
+            .pos-label {
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              span {
+                height: 30/16rem;
+                line-height: 30/16rem;
+                padding: 3/16rem 10/16rem;
+                background-color: #f1f1f1;
+                font-size: 12/16rem;
+                border-radius: 15/16rem;
+              }
+              span:not(last-child) {
+                margin-right: 5/16rem;
+              }
+            }
+            .com-avatar {
+              height: 80/16rem;
+              text-align: center;
+              img {
+                width: 80/16rem;
+                height: 80/16rem;
+              }
+            }
+            .com-info {
+              padding-top: 10/16rem;
+              text-align: center;
+              color: #646464;
+              p {
+                height: 30/16rem;
+                line-height: 30/16rem;
+                font-size: 15/16rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+              }
+            }
+          }
+          .row-bg {
+            padding: 10/16rem 10/16rem;
+            background-color: #f9fafc;
           }
         }
       }

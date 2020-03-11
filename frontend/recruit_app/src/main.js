@@ -8,6 +8,17 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App'
 import router from './router'
 import '../static/js/gt.js'
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+const moment = require('moment')
+// use
+Vue.use(mavonEditor)
+new Vue({
+    'el': '#main',
+    data() {
+        return { value: '' }
+    }
+})
 
 Vue.config.productionTip = false
 

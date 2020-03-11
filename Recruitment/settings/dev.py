@@ -34,18 +34,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # access control
+    'corsheaders',
     # my app
     'user.apps.UserConfig',
     'home.apps.HomeConfig',
     # xadmin
     'xadmin',
     'crispy_forms',
+    'django_filters',
     'reversion',
     # restful
     'rest_framework',
-    # access control
-    'corsheaders',
 ]
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -124,7 +126,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -139,9 +141,9 @@ STATICFILES_DIRS = [
 AUTH_USER_MODEL = 'user.Account'
 
 # 项目中存储上传文件的根目录[暂时配置]，注意，uploads目录需要手动创建否则上传文件时报错
-MEDIA_ROOT=os.path.join(BASE_DIR,"uploads")
+MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 # 访问上传文件的url地址前缀
-MEDIA_URL ="/media/"
+MEDIA_URL = "/media/"
 
 LOGGING = {
     'version': 1,
@@ -218,8 +220,8 @@ AUTHENTICATION_BACKENDS = [
 
 # 极验验证
 GEETEST = {
-    "pc_geetest_id":"b6b9cc384dae65431931b6acbf5314de",
-    "pc_geetest_key":"4d7d181fd6c62dea1607753dc5e9f227",
+    "pc_geetest_id": "b6b9cc384dae65431931b6acbf5314de",
+    "pc_geetest_key": "4d7d181fd6c62dea1607753dc5e9f227",
 }
 
 # 设置redis缓存
@@ -243,7 +245,7 @@ CACHES = {
         }
     },
     # 提供存储短信验证码
-    "sms_code":{
+    "sms_code": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/2",
         "OPTIONS": {
@@ -257,7 +259,7 @@ SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
 
 SMS = {
-    "sms_expire_time": 5 * 60, # 短信验证码有效期，单位：秒
+    "sms_expire_time": 60,  # 短信验证码有效期，单位：秒
     "sms_interval_time": 60,   # 短信验证码发送间隔时间，单位：秒
     "sms_template_id": 1,   # 短信验证码模板ID，测试短信模板使用1
 }

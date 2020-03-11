@@ -1,8 +1,9 @@
 # -*- coding:utf-8 -*-
 
 from .CCPRestSDK import REST
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+# import ssl
+# ssl._create_default_https_context = ssl._create_unverified_context
+# ssl.match_hostname = lambda cert, hostname: True
 
 # 说明：主账号，登陆云通讯网站后，可在"控制台-应用"中看到开发者主账号ACCOUNT SID
 _accountSid = '8a216da86f0d2e39016f0e2dfcbb0245'
@@ -23,25 +24,25 @@ _serverPort = "8883"
 _softVersion = '2013-12-26'
 
 # 云通讯官方提供的发送短信代码实例
-# # 发送模板短信
-# # @param to 手机号码
-# # @param datas 内容数据 格式为数组 例如：{'12','34'}，如不需替换请填 ''
-# # @param $tempId 模板Id
-#
+# 发送模板短信
+# @param to 手机号码
+# @param datas 内容数据 格式为数组 例如：{'12','34'}，如不需替换请填 ''
+# @param $tempId 模板Id
+
 # def sendTemplateSMS(to, datas, tempId):
 #     # 初始化REST SDK
-#     rest = REST(serverIP, serverPort, softVersion)
-#     rest.setAccount(accountSid, accountToken)
-#     rest.setAppId(appId)
+#     rest = REST(_serverIP, _serverPort, _softVersion)
+#     rest.setAccount(_accountSid, _accountToken)
+#     rest.setAppId(_appId)
 #
 #     result = rest.sendTemplateSMS(to, datas, tempId)
 #     for k, v in result.iteritems():
 #
 #         if k == 'templateSMS':
 #             for k, s in v.iteritems():
-#                 print '%s:%s' % (k, s)
+#                 print('%s:%s' % (k, s))
 #         else:
-#             print '%s:%s' % (k, v)
+#             print('%s:%s' % (k, v))
 
 
 class CCP(object):
@@ -70,7 +71,6 @@ class CCP(object):
         else:
             # 返回-1 表示发送失败
             return -1
-
 
 if __name__ == '__main__':
     ccp = CCP()
