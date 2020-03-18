@@ -6,7 +6,7 @@ urlpatterns = [
     path('login/', obtain_jwt_token),
     path("geetest/", views.GeetestCapchaAPIView.as_view()),
     path("", views.AccountAPIView.as_view()),
-    re_path("sms/(?P<mobile>1[3-9]\d{9})/", views.SMSAPIView.as_view()),
+    re_path("sms/", views.SMSAPIView.as_view()),
     path("avatar/", views.avatar_upload),
     re_path("profile/(?P<pk>\d+)/$", views.AccountViewset.as_view({'get': 'retrieve', 'post': 'partial_update'})),
 

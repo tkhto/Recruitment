@@ -258,8 +258,20 @@ CACHES = {
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
 
-SMS = {
-    "sms_expire_time": 60,  # 短信验证码有效期，单位：秒
-    "sms_interval_time": 60,   # 短信验证码发送间隔时间，单位：秒
-    "sms_template_id": 1,   # 短信验证码模板ID，测试短信模板使用1
+###########################################################
+#               腾讯云相关配置
+###########################################################
+# 腾讯云短信应用的 app_id
+TENCENT_SMS_APP_ID = 1400328943
+# 腾讯云短信应用的 app_key
+TENCENT_SMS_APP_KEY = "ac4e6a5b767a7fae94ff16f8f1ca1060"
+# 腾讯云短信签名内容
+TENCENT_SMS_SIGN = "有理想的果冻"
+# 腾讯云模版id
+TENCENT_SMS_TEMPLATE = {
+    'register': 552764, # 注册模版
+    'login': 552765, # 登录模版
+    'resetpwd': 552766 # 重置密码模版
 }
+# 验证码有效期
+SMS_EXPIRE = 30 # 30s

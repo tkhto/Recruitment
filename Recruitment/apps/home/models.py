@@ -8,6 +8,14 @@ class Province(BaseModel):
         verbose_name = '省份'
         verbose_name_plural = verbose_name
 
+class Banners(BaseModel):
+    title = models.CharField(max_length=50, verbose_name="标题")
+    link = models.URLField(verbose_name="跳转连接")
+    image = models.ImageField(verbose_name="图片路径")
+    class Meta:
+        verbose_name = '轮播图'
+        verbose_name_plural = verbose_name
+
 class JobBigCategory(BaseModel):
     name = models.CharField(max_length=32, verbose_name="名称")
     class Meta:

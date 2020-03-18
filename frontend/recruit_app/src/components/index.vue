@@ -112,7 +112,7 @@
                 suffix-icon="el-icon-key"
               >
                 <template slot="append">
-                  <el-button type="primary" size="middle" @click="get_code">获取验证码</el-button>
+                  <el-button type="primary" size="middle" @click="get_code()">获取验证码</el-button>
                 </template>
               </el-input>
             </el-form-item>
@@ -377,7 +377,12 @@ export default {
         return false;
       }
       this.axios
-        .get(`${this.settings.Host}/sms/${this.registForm.mobile}/`)
+        .get(`${this.settings.Host}/sms/`, {
+          params: {
+            mobile: this.registForm.mobile,
+            tpl: 'register'
+          }
+        })
         .then(response => {
           if (response.data.status == 0) {
             this.salert("请求成功", response.data.message, "success");

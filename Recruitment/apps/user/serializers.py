@@ -7,7 +7,7 @@ from rest_framework_jwt.settings import api_settings
 class AccountModelSerializer(serializers.ModelSerializer):
     """用户注册的序列化器"""
     # 字段声明
-    sms_code = serializers.CharField(write_only=True, max_length=6, required=True, help_text="短信验证码")
+    sms_code = serializers.CharField(write_only=True, max_length=4, required=True, help_text="短信验证码")
     token = serializers.CharField(read_only=True, help_text="jwt的认证token")
     # 模型相关声明
     class Meta:
@@ -28,11 +28,9 @@ class AccountModelSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("对不起，手机号码格式有误！")
 
         # 是否被注册了
-        try:
-            models.Account.objects.get(mobile=data)
+        exists = models.Account.objects.filter(mobile=data).exists()
+        if exists:
             raise serializers.ValidationError("对不起，手机号码已经被使用！")
-        except models.Account.DoesNotExist:
-            pass
 
         return data
 
@@ -42,7 +40,7 @@ class AccountModelSerializer(serializers.ModelSerializer):
         mobile = attrs.get("mobile")
         client_sms_code = attrs.get("sms_code")
         redis_conn = get_redis_connection("sms_code")
-        redis_sms_code = redis_conn.get("sms_%s" % mobile)
+        redis_sms_code = redis_conn.get(mobile)
         if redis_sms_code is None:
             raise serializers.ValidationError("短信验证码已经失效了！")
 
@@ -51,7 +49,7 @@ class AccountModelSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("短信验证码错误！")
 
         # 3. 如果正确了，则删除掉redis中的验证码
-        redis_conn.delete("sms_%s" % mobile)
+        redis_conn.delete(mobile)
         return attrs
 
     # 保存数据的方法

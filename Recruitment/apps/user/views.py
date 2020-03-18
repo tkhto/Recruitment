@@ -2,6 +2,7 @@ import os
 import time
 import random
 import json
+import re
 from django.http import JsonResponse
 from rest_framework.views import APIView
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
@@ -16,15 +17,11 @@ from . import models
 from . import filters
 from . import paginations
 from rest_framework import status
-import random
 from django_redis import get_redis_connection
 from django_filters.rest_framework import DjangoFilterBackend
-# from mycelery.sms.yuntongxun.sms import CCP
-from mycelery.sms.tasks import send_sms_code
-
+from Recruitment.utils.tencent.sms import send_sms_single
 # Create your views here.
 
-#TODO 短信验证码
 #TODO xadmin
 
 # 极验验证视图
@@ -236,42 +233,42 @@ def avatar_upload(request):
 
 # 发送短信视图
 class SMSAPIView(APIView):
-    def get(self, request, mobile):
+    def get(self, request):
         """
         短信发送接口
-        url:
-           /users/sms/(?P<mobile>1[3-9]\d{9})/
         """
-        # 1. 验证手机号码是否已经注册了
-        try:
-            models.Account.objects.get(mobile=mobile)
-            return Response({"message": "对不起，当前手机已经被注册！"}, status=status.HTTP_400_BAD_REQUEST)
-        except models.Account.DoesNotExist:
-            pass
+        # 验证手机号是否正确
+        mobile = request.GET.get('mobile')
+        reg = "1[3|4|5|7|8][0-9]{9}"
+        if not re.findall(reg, mobile):
+            return Response({'status': False, 'msg': '手机号格式不正确'})
 
-        # 2. 验证手机是否在一分钟内曾经发送过短信了
+        # 验证模版id
+        tpl = request.GET.get('tpl')
+        template_id = settings.TENCENT_SMS_TEMPLATE.get(tpl)
+        if not template_id:
+            return Response({'status': False, 'msg': '模版id不存在'})
+
+        # 验证手机号码是否已经注册了
+        exists = models.Account.objects.filter(mobile=mobile).exists()
+        if exists:
+            return Response({'status': False, "message": "对不起，当前手机已经被注册！"})
+
+        # 验证手机是否在一分钟内曾经发送过短信了
         redis_conn = get_redis_connection("sms_code")
-        # code = redis_conn.get("sms_%s" % mobile)
-        ret = redis_conn.ttl("interval_%s" % mobile)
-
+        # 还剩多久过期
+        ret = redis_conn.ttl("interval_%s" % mobile) 
         if ret >= 0:
-            return Response({"message": f"对不起，请在{ret}秒后重试"})
+            return Response({"status": False, "message": f"对不起，请在{ret}秒后重试"})
 
-        # 3. 生成短信验证码
-        sms_code = "%06d" % random.randint(100, 999999)
-        send_sms_code.delay(mobile, sms_code)
+        # 生成短信验证码
+        sms_code = random.randrange(1000, 9999)
 
-        # 4. 保存短信验证码
-        # redis_conn.setex("键","时间","值")
-        # 使用redis提供的事务配合管道[pipeline]操作来保证多条命令要么一起执行，要么一起失败！
-        # redis的事务也只能控制数据的修改，设置和删除操作，对于获取数据来说，没必要使用事务！
-        pipe = redis_conn.pipeline()  # 创建一个管道
-        pipe.multi()  # 开启redis事务
-        pipe.setex("sms_%s" % mobile, settings.SMS["sms_expire_time"], sms_code)
-        pipe.setex("interval_%s" % mobile, settings.SMS["sms_interval_time"], '_')
-        pipe.execute() # 执行redis事务
-        result = "验证码正发往您的手机, 请留心"
-        return Response({'status': 0, "message": result})
-        # else:
-        #     result = "验证码发送失败, 请重试"
-        #     return Response({'status': -1, "message": result})
+        # 发送短信
+        sms = send_sms_single(mobile, template_id, [sms_code, ])
+        if sms['result'] != 0:
+            return Response({'status': False, 'msg': '短信发送失败'})
+
+        # 保存短信验证码
+        redis_conn.set(mobile, sms_code, ex=settings.SMS_EXPIRE)
+        return Response({'status': 0, "message": "验证码正发往您的手机, 请留心"})
