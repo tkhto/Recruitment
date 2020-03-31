@@ -37,9 +37,9 @@
                 <h1>职位诱惑：</h1>
                 <p>{{ position.positionAdvantage }}</p>
                 <h1>职位描述：</h1>
-                <p>{{ position.positionIntro }}</p>
+                <p v-html="position.positionIntroHtml"></p>
                 <h1>工作地址</h1>
-                <p>{{ position.city }} - {{ position.district }} - {{ position.subwayLine +""+ position.stationName }}</p>
+                <p>{{ position.city }}-{{ position.district }}-{{ position.subwayLine +""+ position.stationName }}</p>
               </div>
             </div>
           </el-col>
@@ -47,7 +47,7 @@
             <div class="grid-content">
               <div class="com-intro">
                 <div class="com-avatar">
-                  <img :src=position.company.companyLogo alt="">
+                  <img :src="`${this.settings.Host + position.company.companyLogo}`">
                 </div>
                 <p class="com-name">{{ position.company.companyShortName }}</p>
                 <p><i class="el-icon-aim"></i> {{ position.company.industryField }}</p>
@@ -79,6 +79,7 @@ export default {
     async getPosition () {
       let response = await this.axios.get(`${this.settings.Host}/home/position/${this.id}/`)
       this.position = response.data
+      console.log(this.position)
     }
   }
 }
@@ -192,6 +193,7 @@ export default {
               }
               p {
                 margin-bottom: 10/16rem;
+                margin-left: 20px;
                 font-size: 16/16rem;
                 color: #444;
                 line-height: 30/16rem;

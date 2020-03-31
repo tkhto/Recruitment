@@ -3,7 +3,7 @@
     <div class="topbar">
       <div class="container">
         <div class="top-left">
-          <a class="logo" href="javascript:;">Offend</a>
+          <a class="logo" href="/home">Offend</a>
           <div class="curr-addr">
             <span>{{ curr_province }}</span>
             <a href="javascript:;" @click="changeAddrDialog = true">
@@ -33,7 +33,10 @@
                 {{ this.username }}<i class="el-icon-arrow-down el-icon--right"></i>
               </span>
               <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item><router-link tag="p" to="/profile/"><i class="el-icon-s-custom"></i> 个人信息</router-link></el-dropdown-item>
+                <el-dropdown-item v-if="this.user_type==0"><router-link tag="p" to="/profile/"><i class="el-icon-s-custom"></i> 个人信息</router-link></el-dropdown-item>
+                <el-dropdown-item v-if="this.user_type==0"><router-link tag="p" to="/manage/join/"><i class="el-icon-s-custom"></i> 加入公司</router-link></el-dropdown-item>
+                <el-dropdown-item v-if="this.user_type==1"><router-link tag="p" to="/manage/"><i class="el-icon-s-custom"></i> 管理中心</router-link></el-dropdown-item>
+                <el-dropdown-item v-if="this.user_type==1"><router-link tag="p" to="/manage/"><i class="el-icon-s-custom"></i> 找人才</router-link></el-dropdown-item>
                 <el-dropdown-item><router-link tag="p" to="/profile"><i class="el-icon-warning"></i> 退出登录</router-link></el-dropdown-item>
               </el-dropdown-menu>
             </el-dropdown>
@@ -179,6 +182,8 @@ export default {
       nic_name: '',
       avatar: '',
       mobile: '',
+      user_type: '',
+      company_id: '',
       provinceList: [],
       curr_province: "北京市",
       activeName: "first",
@@ -210,6 +215,8 @@ export default {
     this.nic_name = sessionStorage.nic_name;
     this.mobile = sessionStorage.mobile;
     this.avatar = sessionStorage.avatar;
+    this.user_type = sessionStorage.user_type;
+    this.company_id = sessionStorage.company_id;
     this.getProvince();
   },
   methods: {
@@ -274,12 +281,16 @@ export default {
               sessionStorage.mobile = response.data.mobile;
               sessionStorage.avatar = response.data.avatar;
               sessionStorage.nic_name = response.data.nic_name;
+              sessionStorage.user_type = response.data.user_type;
+              sessionStorage.company_id = response.data.companyId;
               this.token = response.data.token;
               this.id = response.data.id;
               this.username = response.data.username;
               this.nic_name = response.data.nic_name;
               this.avatar = response.data.avatar;
               this.mobile = response.data.mobile;
+              this.user_type = response.data.user_type;
+              this.company_id = response.data.companyId;
               let self = this;
               this.salert("注册成功", "在这里寻找你的新起点吧", "success");
               this.loginPanel = false;
@@ -307,12 +318,16 @@ export default {
           sessionStorage.mobile = response.data.mobile;
           sessionStorage.avatar = response.data.avatar;
           sessionStorage.nic_name = response.data.nic_name;
+          sessionStorage.user_type = response.data.user_type;
+          sessionStorage.company_id = response.data.companyId;
           this.token = response.data.token;
           this.id = response.data.id;
           this.username = response.data.username;
           this.nic_name = response.data.nic_name;
           this.avatar = response.data.avatar;
           this.mobile = response.data.mobile;
+          this.user_type = response.data.user_type;
+          this.company_id = response.data.companyId;
           let self = this;
           this.loginPanel = false;
           this.$refs.loginForm.resetFields();

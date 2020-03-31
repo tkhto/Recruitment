@@ -7,8 +7,8 @@
       <div class="user-info">
         <span class="name">{{ userInfo.nic_name }}</span>
         <p class="article-info">
-          <span class="pub-date">发布于：{{ item.update_date | dateStr }}</span>
-          <span class="pub-date">阅读量：{{ item.read_num }}</span>
+          <span class="pub-date"><i class="el-icon-time"></i> {{ item.update_date | dateStr }}</span>
+          <span class="pub-date"><i class="el-icon-view"></i> {{ item.read_num }}</span>
         </p>
       </div>
       <el-dropdown class="more-operate" trigger="hover">
@@ -125,6 +125,7 @@ export default {
       }
       .article-info {
         .pub-date {
+          margin-right: 30px;
           font-size: 14px;
           color: #999;
         }
@@ -448,9 +449,16 @@ export default {
     font-size: 14px;
     color: #666;
     cursor: pointer;
+    a {
+      color: #666;
+    }
     &:hover {
       background-color: #ecf5ff;
       color: #66b1ff;
+      a {
+        background-color: #ecf5ff;
+        color: #66b1ff;
+      }
     }
   }
 }

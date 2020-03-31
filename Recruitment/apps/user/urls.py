@@ -9,6 +9,8 @@ urlpatterns = [
     re_path("sms/", views.SMSAPIView.as_view()),
     path("avatar/", views.avatar_upload),
     re_path("profile/(?P<pk>\d+)/$", views.AccountViewset.as_view({'get': 'retrieve', 'post': 'partial_update'})),
+    path("change_user_type/", views.change_user_type),
+    path("user_auth/", views.user_auth),
 
     path("news/", views.NewsViewset.as_view({'get': 'list', 'post': 'create'})),
     re_path("news_del/(?P<pk>\d+)/", views.NewsViewset.as_view({'delete': 'destroy'})),

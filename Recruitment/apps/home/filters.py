@@ -9,7 +9,7 @@ class PositionFilter(django_filters.FilterSet):
 
     class Meta:
         model = models.Position
-        fields = ['city', 'workYear', 'education', 'skillLabels']
+        fields = ['city', 'workYear', 'education', 'skillLabels', 'publisher', 'companyId']
 
 class CompanyFilter(django_filters.FilterSet):
     companySize = django_filters.NumberFilter(lookup_expr='exact')

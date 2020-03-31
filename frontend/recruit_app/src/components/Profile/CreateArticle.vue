@@ -6,18 +6,18 @@
             <div id="main">
                 <div class="article-desc">
                     <el-form :label-position="labelPosition" label-width="80px" :model="articleInfo">
-                    <el-form-item label="标题">
-                        <el-input v-model="articleInfo.title"></el-input>
-                    </el-form-item>
-                    <el-form-item label="标签">
-                        <el-popover
-                        placement="top-start"
-                        width="200"
-                        trigger="hover"
-                        content="多个标签之间用英文状态下“|”分隔">
-                        <el-input  slot="reference" v-model="articleInfo.tag"></el-input>
-                        </el-popover>
-                    </el-form-item>
+                        <el-form-item label="标题">
+                            <el-input v-model="articleInfo.title"></el-input>
+                        </el-form-item>
+                        <el-form-item label="标签">
+                            <el-popover
+                            placement="top-start"
+                            width="200"
+                            trigger="hover"
+                            content="多个标签之间用英文状态下“|”分隔">
+                            <el-input  slot="reference" v-model="articleInfo.tag"></el-input>
+                            </el-popover>
+                        </el-form-item>
                     </el-form>
                 </div>
                 <mavon-editor 
@@ -33,7 +33,7 @@
                     >
                 </mavon-editor>
                 <div class="operate">
-                    <a href="javascript:;">点击 <i class="fa fa-save"></i> 发表</a>
+                    <a href="javascript:;" @click="saveArticle">发表</a>
                 </div>
             </div>
         </div>
@@ -80,27 +80,26 @@ export default {
             })
         },
         // 保文章
-        saveArticle(markdown, html) {
+        saveArticle() {
             this.axios.post(`${this.settings.Host}/article/`, {
                 user: this.user_id,
                 title: this.articleInfo.title,
                 tag: this.articleInfo.tag,
-                html_code: html,
-                md_code: markdown
+                html_code: this.$refs.md.d_render,
+                md_code: this.$refs.md.d_value
             }).then(response => {
                 this.articleValue = "";
-                this.articleInfo.title = "";
-                this.articleInfo.tag = "";
+                this.articleInfo = {};
                 this.$notify({
-                title: '成功',
-                message: '文章发表成功',
-                type: 'success'
+                    title: '成功',
+                    message: '文章发表成功',
+                    type: 'success'
                 });
             }).catch(error => {
                 this.$notify({
-                title: '失败',
-                message: '请检查是否有空白选项',
-                type: 'error'
+                    title: '失败',
+                    message: '请检查是否有空白选项',
+                    type: 'error'
                 });
             })
         },
@@ -135,9 +134,11 @@ export default {
                 flex-wrap: nowrap;
                 flex-direction: row-reverse;
                 a {
-                display: inline-block;
-                color: #969696;
-                padding: 5px 10px;
+                    display: inline-block;
+                    color: #ffffff;
+                    padding: 5px 10px;
+                    background-color: #2fa4fe;
+                    border-radius: 5px;
                 }
             }
             }

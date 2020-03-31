@@ -82,7 +82,7 @@ class NewsComments(models.Model):
     user = models.ForeignKey(to=Account, on_delete=models.CASCADE, verbose_name="评论用户")
     parent = models.BigIntegerField(default=0, verbose_name="父级评论")
     reply = models.BigIntegerField(default=0, verbose_name="被回复评论")
-    article = models.ForeignKey(to=Article, on_delete=models.CASCADE, verbose_name="文章")
+    news = models.ForeignKey(to=News, on_delete=models.CASCADE, verbose_name="文章")
     content = models.TextField(verbose_name="评论内容")
     create_time = models.DateTimeField(auto_now_add=True, verbose_name="评论时间")
     class Meta:
@@ -91,7 +91,7 @@ class NewsComments(models.Model):
 
 class ArticleLike(models.Model):
     user = models.ForeignKey(to=Account, on_delete=models.CASCADE, verbose_name="用户id")
-    news_id = models.ForeignKey(to=News, on_delete=models.CASCADE, verbose_name="动态id")
+    article_id = models.ForeignKey(to=Article, on_delete=models.CASCADE, verbose_name="动态id")
     class Meta:
         verbose_name = '文章点赞'
         verbose_name_plural = verbose_name

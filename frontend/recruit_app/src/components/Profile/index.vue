@@ -1,5 +1,5 @@
 <template>
-  <div class="profile">
+  <div class="manage">
     <div class="top-banner" v-bind:style="{ backgroundImage: 'url('+ bannerImg +')'}">
     </div>
     <div class="info-first">
@@ -59,7 +59,7 @@
                         >
                         </mavon-editor>
                         <div class="operate">
-                          <a href="javascript:;">点击 <i class="fa fa-save"></i> 发表</a>
+                          <a href="javascript:;">发表</a>
                         </div>
                     </div>
                   </div>
@@ -81,15 +81,6 @@
                     :total="article_list.count">
                   </el-pagination>
                 </div>
-                <div class="info-content" v-if="panel_id == 'collect'">
-                  <Collections v-for="(item, i) in collect_list" :key="i" v-bind:item="item" v-bind:userInfo="userInfo"></Collections>
-                  <el-pagination
-                    background
-                    @current-change="handleCurrentChange"
-                    layout="prev, pager, next"
-                    :total=news_list.count>
-                  </el-pagination>
-                </div>
                 <div class="info-content" v-if="panel_id == 'resume'">
                   <a class="create" :href="`/createresume/${this.user_id}`" target="_blank"><i class="el-icon-circle-plus-outline"></i> 创建简历</a>
                   <div class="resume-wrapper">
@@ -101,6 +92,15 @@
                     @current-change="handleCurrentChange"
                     layout="prev, pager, next"
                     :total="resume_list.count">
+                  </el-pagination>
+                </div>
+                <div class="info-content" v-if="panel_id == 'collect'">
+                  <Collections v-for="(item, i) in collect_list" :key="i" v-bind:item="item" v-bind:userInfo="userInfo"></Collections>
+                  <el-pagination
+                    background
+                    @current-change="handleCurrentChange"
+                    layout="prev, pager, next"
+                    :total=news_list.count>
                   </el-pagination>
                 </div>
               </div>
@@ -175,14 +175,13 @@
               <el-input type="textarea" v-model="userInfo.intro"></el-input>
             </el-form-item>
             <el-form-item label="角色" :label-width="formLabelWidth">
-              <el-radio v-model="userInfo.user_type" label="0">求职者</el-radio>
-              <el-radio v-model="userInfo.user_type" label="1">招人者</el-radio>
+              <el-button><el-link :underline="false" href="/change">{{ userInfo.get_user_type_display }} ｜ 点击切换身份</el-link></el-button>
             </el-form-item>
             <el-form-item label="所在城市" :label-width="formLabelWidth">
               <el-input v-model="userInfo.city" autocomplete="off"></el-input>
             </el-form-item>
             <el-form-item label="任职公司" :label-width="formLabelWidth">
-              <el-input v-model="userInfo.companyId" autocomplete="off"></el-input>
+              <el-button><el-link :underline="false" href="https://www.baidu.com" target="_blank">Tesla</el-link></el-button>
             </el-form-item>
             <el-form-item label="岗位" :label-width="formLabelWidth">
               <el-input v-model="userInfo.selfPosition" autocomplete="off"></el-input>
@@ -269,11 +268,10 @@
 </template>
 
 <script>
-import News from "./News/index"
-import Collections from "./Collections/index"
-import Articles from "./Articles/index"
-import Resume from "./Resume/index"
-import CKEditor from "../Common/CKEditor5"
+import News from "../Profile/News/index"
+import Collections from "../Profile/Collections/index"
+import Articles from "../Profile/Articles/index"
+import Resume from "../Profile/Resume/index"
 
 export default {
   data() {
@@ -322,11 +320,10 @@ export default {
     submitProfile () {
       const params = {
         "nic_name": this.userInfo.nic_name,
-        "avatar": this.userInfo.avatar,
+        // "avatar": this.userInfo.avatar,
         "gender": this.userInfo.gender,
         "birthday": this.userInfo.birthday,
         "intro": this.userInfo.intro,
-        "user_type": this.userInfo.user_type,
         "city": this.userInfo.city,
         "companyId": this.userInfo.companyId,
         "selfPosition": this.userInfo.selfPosition,
@@ -447,13 +444,13 @@ export default {
     }
   },
   components: {
-    News, Collections, Articles, Resume, CKEditor
+    News, Collections, Articles, Resume
   }
 };
 </script>
 
 <style lang="less" rel="stylesheet/less">
-.profile {
+.manage {
   .top-banner {
     height: 200/16rem;
     background-size: cover;
@@ -626,8 +623,10 @@ export default {
                       flex-direction: row-reverse;
                       a {
                         display: inline-block;
-                        color: #969696;
+                        color: #ffffff;
                         padding: 5px 10px;
+                        background-color: #2fa4fe;
+                        border-radius: 5px;
                       }
                     }
                   }
@@ -726,32 +725,6 @@ export default {
                 display: block;
               }
             }
-          }
-        }
-      }
-    }
-  }
-}
-.edit-article-dislog {
-  .el-dialog__body {
-    padding: 0px !important;
-    .editor {
-      background-color: #fff;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      #main {
-        .article-desc {
-          padding: 25px 25px 0 25px;
-        }
-        .operate {
-          padding: 10px;
-          display: flex;
-          flex-wrap: nowrap;
-          flex-direction: row-reverse;
-          a {
-            display: inline-block;
-            color: #969696;
-            padding: 5px 10px;
           }
         }
       }

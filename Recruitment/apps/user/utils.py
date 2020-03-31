@@ -10,8 +10,10 @@ def jwt_response_payload_handler(token, user=None, request=None):
         'mobile': user.mobile,
         'nic_name': user.nic_name,
         'avatar': user.avatar.url,
+        'user_type': user.user_type,
+        'companyId': user.companyId
     }
-# 多条件认证
+
 def get_user_by_account(mobile):
     try:
         user = Account.objects.get(mobile=mobile)
@@ -23,5 +25,4 @@ class UsernameMobileAuthBackend(ModelBackend):
     def authenticate(self, request, username=None, password=None, **kwargs):
         user = get_user_by_account(username)
         if user is not None and user.check_password(password) and user.is_active:
-            print("user:::",user)
             return user

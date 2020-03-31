@@ -34,9 +34,8 @@
             style="min-height:150px"
           ></mavon-editor>
           <div class="operate">
-            <a href="javascript:;">
-              点击
-              <i class="fa fa-save"></i> 保存
+            <a href="javascript:;" @click="editArticle">
+              更新
             </a>
           </div>
         </div>
@@ -87,18 +86,17 @@ export default {
         this.axios.get(`${this.settings.Host}/article/${article_id}/`)
         .then(response => {
           this.article = response.data.result;
-          this.editArticleVisible = true;
         });
     },
     // 更新文章
-    editArticle(markdown, html) {
+    editArticle() {
       this.axios
         .post(`${this.settings.Host}/article/${this.article.id}/`, {
           user: this.user_id,
           title: this.article.title,
           tag: this.article.tag,
-          html_code: html,
-          md_code: markdown
+          html_code: this.$refs.md.d_render,
+          md_code: this.$refs.md.d_value
         })
         .then(response => {
           this.$notify({
@@ -147,8 +145,10 @@ export default {
           flex-direction: row-reverse;
           a {
             display: inline-block;
-            color: #969696;
+            color: #ffffff;
             padding: 5px 10px;
+            background-color: #2fa4fe;
+            border-radius: 5px;
           }
         }
       }

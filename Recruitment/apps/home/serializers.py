@@ -25,6 +25,12 @@ class CategorySerializers(serializers.ModelSerializer):
         model = models.JobBigCategory
         fields = ["id", "name", "sub_category"]
 
+class PositionViewsetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Position
+        # exclude = ['orders']
+        fields = "__all__"
+
 class PositionModelSerializer(serializers.ModelSerializer):
     skillLabels = serializers.SerializerMethodField()
     education = serializers.SerializerMethodField()
@@ -82,4 +88,4 @@ class PositionRetrieveSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.Position
-        fields = ['positionName', 'salary', 'workYear', 'city', 'district', 'subwayLine', 'stationName', 'education', 'jobNature', 'positionAdvantage', 'positionIntro', 'company']
+        fields = ['positionName', 'salary', 'workYear', 'city', 'district', 'subwayLine', 'stationName', 'education', 'jobNature', 'positionAdvantage', 'positionIntro', 'positionIntroHtml', 'create_time', 'company']

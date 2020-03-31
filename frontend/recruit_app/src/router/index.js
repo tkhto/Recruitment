@@ -13,6 +13,11 @@ import EditResume from '@/components/Profile/EditResume'
 import CreateArticle from '@/components/Profile/CreateArticle'
 import EditArticle from '@/components/Profile/EditArticle'
 import Article from '@/components/Profile/Article'
+import Manage from '@/components/Manage'
+import Change from '@/components/Common/Change'
+import Join from '@/components/Manage/Join'
+import CreatePosition from '@/components/Manage/Position/CreatePosition'
+import EditPosition from '@/components/Manage/Position/EditPosition'
 
 Vue.use(Router)
 
@@ -34,6 +39,26 @@ export default new Router({
         {
           path: '/profile',
           component: Profile
+        },
+        {
+          path: '/manage',
+          component: Manage
+        },
+        {
+          path: '/change',
+          component: Change
+        },
+        {
+          path: '/createposition/:id',
+          component: CreatePosition
+        },
+        {
+          path: '/editposition/:id',
+          component: EditPosition
+        },
+        {
+          path: '/manage/join',
+          component: Join
         },
         {
           path: '/company/:id',

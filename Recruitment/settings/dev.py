@@ -2,6 +2,7 @@ import os
 import sys
 import logging
 import datetime
+import re
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -58,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'user.middleware.auth.AuthMiddleWare',
 ]
 
 ROOT_URLCONF = 'Recruitment.urls'
@@ -275,3 +277,14 @@ TENCENT_SMS_TEMPLATE = {
 }
 # 验证码有效期
 SMS_EXPIRE = 30 # 30s
+
+WHITE_REGEX_URL_LIST = [
+    "/login",
+    "/sms",
+    "/geetest",
+    "/change_user_type"
+    r"^/home",
+    r"^/media",
+    r"^/article/\d+/",
+    r"^/articlecomment/\d+"
+]

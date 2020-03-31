@@ -20,9 +20,9 @@ from rest_framework import status
 from django_redis import get_redis_connection
 from django_filters.rest_framework import DjangoFilterBackend
 from Recruitment.utils.tencent.sms import send_sms_single
+from home.models import Position, Company
 # Create your views here.
 
-#TODO xadmin
 
 # 极验验证视图
 class GeetestCapchaAPIView(APIView):
@@ -43,13 +43,31 @@ class GeetestCapchaAPIView(APIView):
         validate = request.data.get(gt.FN_VALIDATE, '')
         seccode = request.data.get(gt.FN_SECCODE, '')
         result = gt.failback_validate(challenge, validate, seccode)
-        result = {"status": "success"} if result else {"status": "fail"}
+        if result:
+            result = {"status": "success"} 
+        else:
+            result = {"status": "fail"}
         return Response(result)
 
 class AccountAPIView(CreateAPIView):
     """用户管理"""
     queryset = models.Account.objects.all()
     serializer_class = serializers.AccountModelSerializer
+
+@csrf_exempt
+def change_user_type(request):
+    """切换用户类型为普通用户"""
+    data = json.loads(request.body.decode())
+    user_id = data.get('user_id')
+    mobile = data.get('mobile')
+    user_obj = models.Account.objects.filter(pk=user_id, mobile=mobile).first()
+    if not user_obj:
+        return JsonResponse({'status': 400})
+    user_obj.user_type = "0" if user_obj.user_type == "1" else "1"
+    user_obj.companyId = None
+    user_obj.save()
+    Position.objects.filter(publisher_id=user_id).update(is_delete=1, is_show=0)
+    return JsonResponse({'status': 200})
 
 class AccountViewset(GenericViewSet, mixins.UpdateModelMixin, mixins.RetrieveModelMixin):
     queryset = models.Account.objects.all()
@@ -231,6 +249,23 @@ def avatar_upload(request):
     destination.close()
     return JsonResponse({"url": f"avatar/{filename}"})
 
+@csrf_exempt
+def user_auth(request):
+    comapanyName = request.GET.get('name')
+    email = request.GET.get('email')
+    user_id = request.GET.get('uid')
+    mobile = request.GET.get('mobile')
+    company_obj = Company.objects.filter(companyFullName=comapanyName, companyEmail__icontains=email).first()
+    if not company_obj:
+        return JsonResponse({'status': 400, 'msg': "该公司或邮箱不存在"})
+    user_obj = models.Account.objects.filter(pk=user_id, mobile=mobile).first()
+    if not user_obj:
+        return JsonResponse({'status': 400, 'msg': "该用户不存在"})
+    user_obj.user_type = "1"
+    user_obj.companyId = company_obj.companyId
+    user_obj.save()
+    return JsonResponse({'status': 200, 'msg': "切换切页用户成功"})
+    
 # 发送短信视图
 class SMSAPIView(APIView):
     def get(self, request):
@@ -257,7 +292,7 @@ class SMSAPIView(APIView):
         # 验证手机是否在一分钟内曾经发送过短信了
         redis_conn = get_redis_connection("sms_code")
         # 还剩多久过期
-        ret = redis_conn.ttl("interval_%s" % mobile) 
+        ret = redis_conn.ttl(mobile) 
         if ret >= 0:
             return Response({"status": False, "message": f"对不起，请在{ret}秒后重试"})
 

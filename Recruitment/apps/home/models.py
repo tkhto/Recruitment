@@ -65,6 +65,7 @@ class Company(BaseModel):
     legalize = models.BooleanField(choices=((0, '未认证'), (1, '已认证')), verbose_name="是否经过认证", default=0)
     latitude = models.CharField(max_length=32, verbose_name="纬度")
     longitude = models.CharField(max_length=32, verbose_name="经度")
+    companyEmail = models.TextField(verbose_name="企业邮箱列表")
     class Meta:
         verbose_name = '公司列表'
         verbose_name_plural = verbose_name
@@ -93,7 +94,8 @@ class Position(BaseModel):
     skillLabels = models.CharField(max_length=100, verbose_name="技术标签", help_text="多个分类之间用逗号分隔")
     positionLabels = models.CharField(max_length=100, verbose_name="职位标签", help_text="多个分类之间用逗号分隔")
     industryLabels = models.CharField(max_length=100, verbose_name="行业标签", help_text="多个分类之间用逗号分隔")
-    positionIntro = models.TextField(verbose_name="职位描述")
+    positionIntro = models.TextField(verbose_name="职位描述（md）")
+    positionIntroHtml = models.TextField(verbose_name="职位描述（html）")
     city = models.CharField(max_length=32, verbose_name="工作地点")
     district = models.CharField(max_length=32, blank=True, null=True, verbose_name="工作地点-区")
     salary = models.CharField(max_length=32, verbose_name="月薪", help_text="例：10k-20k")

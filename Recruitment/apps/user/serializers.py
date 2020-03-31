@@ -12,7 +12,7 @@ class AccountModelSerializer(serializers.ModelSerializer):
     # 模型相关声明
     class Meta:
         model = models.Account
-        fields = ["password", "sms_code", "token", "id", "username", "avatar"]
+        fields = ["password", "sms_code", "token", "id", "username", "avatar", "companyId"]
         # 给模型序列化器进行额外声明
         extra_kwargs = {
             "password": {"write_only": True},
@@ -73,7 +73,7 @@ class AccountModelSerializer(serializers.ModelSerializer):
 class AccountSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Account
-        fields = ["username", "nic_name", "avatar", "gender", "birthday", "intro", "site", "user_type", "city", "companyId", "selfPosition", "education", "work_status", "mobile", "email", "weibo", "github", "facebook", "twitter", "graduatedSchool", "specialty", "unifiedAdmission", "admissionTime", "graduationTime"]
+        fields = ["username", "nic_name", "avatar", "gender", "birthday", "intro", "site", "get_user_type_display", "city", "companyId", "selfPosition", "education", "work_status", "mobile", "email", "weibo", "github", "facebook", "twitter", "graduatedSchool", "specialty", "unifiedAdmission", "admissionTime", "graduationTime"]
 
 class NewSerializer(serializers.ModelSerializer):
     class Meta:

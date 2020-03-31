@@ -19,3 +19,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    # TODO 企业用户界面开发，投简历，聊天功能，社区功能
