@@ -265,7 +265,50 @@ def user_auth(request):
     user_obj.companyId = company_obj.companyId
     user_obj.save()
     return JsonResponse({'status': 200, 'msg': "切换切页用户成功"})
-    
+
+class DeliveryViewset(mixins.CreateModelMixin,
+                    mixins.ListModelMixin,
+                    mixins.RetrieveModelMixin,
+                    GenericViewSet):
+    queryset = models.DeliveryRecord.objects.filter(isdelivery_delete=0).order_by('create_time')
+    serializer_class = serializers.DeliverySerializer
+
+    def create(self, request, *args, **kwargs):
+        print(request.data)
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+
+def delivery_record(request, user):
+    """获取投递记录"""
+    data = models.DeliveryRecord.objects.filter(isdelivery_delete=False, user_id=user).values('pk', 'create_time', 'position__id', 'position__positionName', 'status')
+    return JsonResponse({'status': 200, 'data': list(data)})
+
+def received_record(request, user):
+    """获取接收投递记录"""
+    data = models.DeliveryRecord.objects.filter(isreceiver_delete=False,position__publisher_id=user).values('pk', 'user__nic_name', 'user__resume__id', 'user_id', 'position_id', 'status', 'create_time')
+    return JsonResponse({'status': 200, 'data': list(data)})
+
+def received_change(request, pk):
+    """改变投递记录状态"""
+    obj = models.DeliveryRecord.objects.filter(pk=pk).first()
+    obj.status = 1
+    obj.save()
+    return JsonResponse({'status': 200})
+
+def delivery_delete(request, pk):
+    """删除投递记录"""
+    user_type = request.GET.get('type')
+    obj = models.DeliveryRecord.objects.filter(pk=pk).first()
+    if user_type == 'receiver':
+        obj.isreceiver_delete = 1
+    elif user_type == 'delivery':
+        obj.isdelivery_delete = 1
+    obj.save()
+    return JsonResponse({'status': 200})
+
 # 发送短信视图
 class SMSAPIView(APIView):
     def get(self, request):

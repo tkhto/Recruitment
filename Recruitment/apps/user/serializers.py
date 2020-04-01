@@ -115,3 +115,7 @@ class ResumeSerializer(serializers.ModelSerializer):
         model = models.Resume
         fields = ['id', 'title', 'html_code', 'md_code', 'pub_date', 'update_date', 'isShow', 'user', 'userinfo']
         
+class DeliverySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.DeliveryRecord
+        fields = "__all__"

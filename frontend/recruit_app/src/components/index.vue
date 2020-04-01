@@ -33,11 +33,15 @@
                 {{ this.username }}<i class="el-icon-arrow-down el-icon--right"></i>
               </span>
               <el-dropdown-menu slot="dropdown">
+                <!-- 普通用户 -->
                 <el-dropdown-item v-if="this.user_type==0"><router-link tag="p" to="/profile/"><i class="el-icon-s-custom"></i> 个人信息</router-link></el-dropdown-item>
+                <el-dropdown-item v-if="this.user_type==0"><router-link tag="p" to="/delivery/"><i class="el-icon-s-custom"></i> 投递记录</router-link></el-dropdown-item>
                 <el-dropdown-item v-if="this.user_type==0"><router-link tag="p" to="/manage/join/"><i class="el-icon-s-custom"></i> 加入公司</router-link></el-dropdown-item>
+                <!-- 企业用户 -->
                 <el-dropdown-item v-if="this.user_type==1"><router-link tag="p" to="/manage/"><i class="el-icon-s-custom"></i> 管理中心</router-link></el-dropdown-item>
+                <el-dropdown-item v-if="this.user_type==1"><router-link tag="p" to="/received/"><i class="el-icon-s-custom"></i> 已收简历</router-link></el-dropdown-item>
                 <el-dropdown-item v-if="this.user_type==1"><router-link tag="p" to="/manage/"><i class="el-icon-s-custom"></i> 找人才</router-link></el-dropdown-item>
-                <el-dropdown-item><router-link tag="p" to="/profile"><i class="el-icon-warning"></i> 退出登录</router-link></el-dropdown-item>
+                <el-dropdown-item><el-link :underline="false" @click="logout"><i class="el-icon-warning"></i> 退出登录</el-link></el-dropdown-item>
               </el-dropdown-menu>
             </el-dropdown>
           </li>
@@ -408,6 +412,10 @@ export default {
         .catch(error => {
           this.salert("获取失败", "请重试", "error");
         });
+    },
+    logout () {
+      sessionStorage.clear();
+      location.href="/home"
     }
   },
   components: {

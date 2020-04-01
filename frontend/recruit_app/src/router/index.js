@@ -18,6 +18,8 @@ import Change from '@/components/Common/Change'
 import Join from '@/components/Manage/Join'
 import CreatePosition from '@/components/Manage/Position/CreatePosition'
 import EditPosition from '@/components/Manage/Position/EditPosition'
+import Delivery from '@/components/Profile/Resume/Delivery'
+import Received from '@/components/Manage/Received'
 
 Vue.use(Router)
 
@@ -39,6 +41,14 @@ export default new Router({
         {
           path: '/profile',
           component: Profile
+        },
+        {
+          path: '/delivery',
+          component: Delivery
+        },
+        {
+          path: '/received',
+          component: Received
         },
         {
           path: '/manage',

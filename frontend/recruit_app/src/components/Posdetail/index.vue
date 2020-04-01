@@ -20,7 +20,7 @@
           <el-col :span="6">
             <div class="grid-content">
               <div class="btn-wrapper">
-                <a href="javascript:;"><i class="el-icon-position"></i> 投递简历</a>
+                <a href="javascript:;" @click="deliveryResume"><i class="el-icon-position"></i> 投递简历</a>
                 <a href="javascript:;"><i class="el-icon-star-off"></i> 收藏</a>
               </div>
             </div>
@@ -68,18 +68,38 @@ export default {
   name: 'posdetail',
   data () {
     return {
-      id: this.$route.params.id,
+      pos_id: '',
+      user_id: '',
       position: []
     }
   },
   created () {
-    this.getPosition()
+    this.pos_id = this.$route.params.id;
+    this.user_id = sessionStorage.user_id;
+    this.getPosition();
   },
   methods: {
     async getPosition () {
-      let response = await this.axios.get(`${this.settings.Host}/home/position/${this.id}/`)
+      let response = await this.axios.get(`${this.settings.Host}/home/position/${this.pos_id}/`)
       this.position = response.data
-      console.log(this.position)
+    },
+    deliveryResume () {
+      this.axios.post(`${this.settings.Host}/delivery/`, {
+        user: this.user_id,
+        position: this.pos_id
+      }).then(res => {
+        this.$notify({
+          title: '成功',
+          message: '简历已投递，请耐心等待回复',
+          type: 'success'
+        });
+      }).catch(err => {
+        this.$notify({
+          title: '失败',
+          message: '简历已投递过了，不要重复投递哦',
+          type: 'error'
+        });
+      })
     }
   }
 }

@@ -22,5 +22,11 @@ urlpatterns = [
 
     path("resume/", views.ResumeViewset.as_view({'get': 'list', 'post': 'create'})),
     re_path("resume_del/(?P<pk>\d+)/", views.ResumeViewset.as_view({'delete': 'destroy'})),
-    re_path("resume/(?P<pk>\d+)/", views.ResumeRetrieve.as_view({'get': 'retrieve', 'post': 'partial_update'}))
+    re_path("resume/(?P<pk>\d+)/", views.ResumeRetrieve.as_view({'get': 'retrieve', 'post': 'partial_update'})),
+    path("delivery/", views.DeliveryViewset.as_view({'post': 'create'})),
+    re_path("delivery/user/(?P<user>\d+)/", views.delivery_record),
+    re_path("received/user/(?P<user>\d+)/", views.received_record),
+    re_path("received/change/(?P<pk>\d+)/", views.received_change),
+    re_path("delivery/delete/(?P<pk>\d+)/", views.delivery_delete),
+    re_path("delivery/(?P<pk>\d+)/", views.DeliveryViewset.as_view({'get': 'retrieve'})),
 ]

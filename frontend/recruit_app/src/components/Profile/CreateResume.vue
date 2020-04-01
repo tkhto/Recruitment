@@ -22,13 +22,12 @@
                 v-model="resumeValue" 
                 ref=md @imgAdd="imgAdd"
                 :toolbars="toolbars"
-                @save="saveResume"
                 placeholder="点击全屏实时预览"
                 style="min-height:500px"
                 >
                 </mavon-editor>
                 <div class="operate">
-                    <a href="javascript:;">点击 <i class="fa fa-save"></i> 保存</a>
+                    <a href="javascript:;" @click="saveResume">保存</a>
                 </div>
             </div>
         </div>
@@ -75,26 +74,26 @@ export default {
             })
         },
         // 保存简历
-        saveResume (markdown, html) {
+        saveResume () {
             this.axios.post(`${this.settings.Host}/resume/`, {
                 title: this.resumeInfo.title,
-                html_code: html,
-                md_code: markdown,
+                html_code: this.$refs.md.d_render,
+                md_code: this.$refs.md.d_value,
                 is_show: Number(this.resumeInfo.is_show),
                 user: this.user_id
             }).then(response => {
                 this.$notify({
-                title: '成功',
-                message: '您创建了一份新的简历',
-                type: 'success'
+                    title: '成功',
+                    message: '您创建了一份新的简历',
+                    type: 'success'
                 });
                 this.resumeValue = "";
                 this.resumeInfo.title = "";
             }).catch(error => {
                 this.$notify({
-                title: '失败',
-                message: '请检查是否有空缺项',
-                type: 'error'
+                    title: '失败',
+                    message: '只能创建一份简历，或字段有空缺项',
+                    type: 'error'
                 });
             })
         }
@@ -125,9 +124,11 @@ export default {
                 flex-wrap: nowrap;
                 flex-direction: row-reverse;
                 a {
-                display: inline-block;
-                color: #969696;
-                padding: 5px 10px;
+                    display: inline-block;
+                    color: #ffffff;
+                    padding: 5px 10px;
+                    background-color: #2fa4fe;
+                    border-radius: 5px;
                 }
             }
             }

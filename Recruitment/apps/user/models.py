@@ -108,7 +108,7 @@ class ArticleComments(models.Model):
         verbose_name_plural = verbose_name
 
 class Resume(models.Model):
-    user = models.ForeignKey(to=Account, on_delete=models.CASCADE, verbose_name="用户id")
+    user = models.OneToOneField(to=Account, on_delete=models.CASCADE, verbose_name="用户id")
     title = models.CharField(max_length=100, verbose_name="简历标题")
     html_code = models.TextField(verbose_name="html内容")
     md_code = models.TextField(verbose_name="markdown内容")
@@ -118,4 +118,16 @@ class Resume(models.Model):
     is_delete = models.BooleanField(choices=((1, '是'), (0, '否')), default=0, verbose_name="是否删除")
     class Meta:
         verbose_name = '简历'
+        verbose_name_plural = verbose_name
+
+class DeliveryRecord(models.Model):
+    user = models.ForeignKey(to="Account", on_delete=models.CASCADE, verbose_name="投递人")
+    position = models.ForeignKey(to="home.Position", on_delete=models.CASCADE, verbose_name="职位")
+    status = models.BooleanField(choices=((0, '未查看'), (1, '已查看')), default=0, verbose_name="状态")
+    create_time = models.DateTimeField(auto_now_add=True, verbose_name="投递时间")
+    isdelivery_delete = models.BooleanField(choices=((1, '是'), (0, '否')), default=0, verbose_name="投递者是否删除")
+    isreceiver_delete = models.BooleanField(choices=((1, '是'), (0, '否')), default=0, verbose_name="接收者是否删除")
+    class Meta:
+        unique_together = ('user', 'position')
+        verbose_name = "简历投递记录"
         verbose_name_plural = verbose_name

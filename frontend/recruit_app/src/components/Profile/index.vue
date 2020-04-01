@@ -59,7 +59,7 @@
                         >
                         </mavon-editor>
                         <div class="operate">
-                          <a href="javascript:;">发表</a>
+                          <a href="javascript:;" @click="saveNews">发表</a>
                         </div>
                     </div>
                   </div>
@@ -379,7 +379,7 @@ export default {
     },
     // 获取动态，文章，收藏，简历
     async getData () {
-      const response = await this.axios.get(`${this.settings.Host}/${this.panel_id}/?${this.panel_id}=${this.user_id}`, {
+      const response = await this.axios.get(`${this.settings.Host}/${this.panel_id}/?user=${this.user_id}`, {
         params: this.filters
       });
       if (this.panel_id == 'news') {
@@ -413,11 +413,11 @@ export default {
         })
     },
     // 保存动态
-    saveNews(markdown, html) {
+    saveNews() {
       // 此时会自动将 markdown 和 html 传递到这个方法中
       this.axios.post(`${this.settings.Host}/news/`, {
           user: this.user_id,
-          content: html
+          content: this.$refs.md.d_render
       }).then(response => {
         this.getData();
         this.newsValue = "";
